@@ -4,48 +4,167 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebsiteFJW</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' id='trx_addons-icons-css' href='~/js/vendor/plugins/trx_addons/css/font-icons/css/trx_addons_icons-embedded.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='trx_addons-css' href='~/js/vendor/plugins/trx_addons/css/trx_addons.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='laon_wine_house-font-google_fonts-css' href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic%7CLato:400,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='laon_wine_house-fontello-css' href='~/css/fontello/css/fontello-embedded.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='laon_wine_house-main-css' href='~/css/style.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='laon_wine_house-animation-css' href='~/css/animation.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='laon_wine_house-colors-css' href='~/css/__colors.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='laon_wine_house-styles-css' href='~/css/__styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='laon_wine_house-custom-css' href='~/css/custom.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='laon_wine_house-responsive-css' href='~/css/responsive.min.css' type='text/css' media='all' />
+	@RenderSection("Styles", required: false)
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebsiteFJW</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+<body class="page page-template-default body_tag body_style_wide scheme_default blog_mode_page is_single sidebar_hide header_style_header-1 header_position_default header_title_on menu_style_top vc_responsive desktop_layout">
+	<div class="body_wrap">
+        <div class="page_wrap">
+			<header class="top_panel top_panel_style_1 without_bg_image scheme_default">
+				<a class="menu_mobile_button"></a>
+				<div class="top_panel_fixed_wrap"></div>
+				<div class="top_panel_navi scheme_default">
+					<div class="menu_main_wrap clearfix">
+						<div class="wrap">
+							<a class="logo" href="/"><img src="images/logo.png" class="logo_main" alt="" /></a>
+							<nav class="menu_main_nav_area menu_hover_fade">
+								<ul id="menu_main" class="menu_main_nav">
+									<li class="menu-item">
+										<a href="/"><span>Home</span></a>
+										@*<ul class="sub-menu">
+											<li class="menu-item"><a href="index.html"><span>Home 1</span></a></li>
+											<li class="menu-item"><a href="home2.html"><span>Home 2</span></a></li>
+											<li class="menu-item"><a href="home3.html"><span>Home 3</span></a></li>
+										</ul>*@
+									</li>
+									<li class="menu-item@(ViewBag.PCurrent == "winelist" ? " current-menu-parent" : "")">
+										<a href="winelist"><span>Our range</span></a>
+									</li>
+									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "blogarchive" ? " current-menu-parent" : "")">
+										<a href="blogarchive"><span>The Journal</span></a>
+										<ul class="sub-menu">
+											@*<li class="menu-item menu-item-has-children">
+												<a href="blog-style-chess-2-columns-2.html"><span>Blog Style 1</span></a>
+												<ul class="sub-menu">
+													<li class="menu-item"><a href="blog-style-chess-2-columns-2.html"><span>2 columns</span></a></li>
+													<li class="menu-item"><a href="blog-style-chess-4-columns.html"><span>4 columns</span></a></li>
+													<li class="menu-item"><a href="blog-style-chess-6-columns.html"><span>6 columns</span></a></li>
+												</ul>
+											</li>
+											<li class="menu-item menu-item-has-children">
+												<a href="blog-style-2.html"><span>Blog Style 2</span></a>
+												<ul class="sub-menu">
+													<li class="menu-item"><a href="blog-archive.html"><span>1 column</span></a></li>
+													<li class="menu-item"><a href="blog-style-2.html"><span>2 columns</span></a></li>
+													<li class="menu-item"><a href="blog-style-classic-3-columns.html"><span>3 columns</span></a></li>
+												</ul>
+											</li>*@
+											<li class="menu-item menu-item-has-children@(ViewBag.CCurrent == "portfolio" ? " current-menu-item" : "")">
+												<a href="portfolio"><span>Portfolio</span></a>
+												<ul class="sub-menu">
+													<li class="menu-item@(ViewBag.CCurrent == "portfolio2c" ? " current-menu-item" : "")">
+														<a href="portfolio2c"><span>2 columns</span></a>
+													</li>
+													<li class="menu-item@(ViewBag.CCurrent == "portfolio3c" ? " current-menu-item" : "")">
+														<a href="portfolio3c"><span>3 columns</span></a>
+													</li>
+													<li class="menu-item@(ViewBag.CCurrent == "portfolio4c" ? " current-menu-item" : "")">
+														<a href="portfolio4c"><span>4 columns</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="menu-item@(ViewBag.CCurrent == "postformats" ? " current-menu-item" : "")">
+												<a href="postformats"><span>Post Formats</span></a>
+											</li>
+											<li class="menu-item@(ViewBag.CCurrent == "singlepost" ? " current-menu-item" : "")">
+												<a href="singlepost"><span>Post with comments</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "buywines" ? " current-menu-parent" : "")">
+										<a href="buywines"><span>Buy Wines</span></a>
+										<ul class="sub-menu">
+											<li class="menu-item@(ViewBag.CCurrent == "cart" ? " current-menu-item" : "")">
+												<a href="cart"><span>Cart</span></a>
+											</li>
+											<li class="menu-item@(ViewBag.CCurrent == "checkout" ? " current-menu-item" : "")">
+												<a href="checkout"><span>Checkout</span></a>
+											</li>
+											<li class="menu-item@(ViewBag.CCurrent == "myaccount" ? " current-menu-item" : "")">
+												<a href="myaccount"><span>My Account</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "features" ? " current-menu-parent" : "")">
+										<a href="#"><span>Features</span></a>
+										<ul class="sub-menu">
+											<li class="menu-item@(ViewBag.CCurrent == "typography" ? " current-menu-item" : "")">
+												<a href="typography"><span>Typography</span></a>
+											</li>
+											<li class="menu-item@(ViewBag.CCurrent == "shortcodes" ? " current-menu-item" : "")">
+												<a href="shortcodes"><span>Shortcodes</span></a>
+											</li>
+											<li class="menu-item@(ViewBag.CCurrent == "events" ? " current-menu-item" : "")">
+												<a href="events"><span>Events</span></a>
+											</li>
+											@*<li class="menu-item"><a href="non-existing-page.html"><span>Page 404</span></a></li>*@
+										</ul>
+									</li>
+									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "contacts" ? " current-menu-parent" : "")">
+										<a href="contacts"><span>Contacts</span></a>
+										<ul class="sub-menu">
+											<li class="menu-item@(ViewBag.CCurrent == "contacts" ? " current-menu-item" : "")"><a href="contacts"><span>Contact Us</span></a></li>
+											<li class="menu-item@(ViewBag.CCurrent == "aboutus" ? " current-menu-item" : "")"><a href="aboutus"><span>About Us</span></a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="search_wrap search_style_fullscreen">
+									<div class="search_form_wrap">
+										<form role="search" method="get" class="search_form" action="#">
+											<input type="text" class="search_field" placeholder="Search" value="" name="s">
+											<button type="submit" class="search_submit icon-search"></button>
+											<a class="search_close icon-cancel"></a>
+										</form>
+									</div>
+									<div class="search_results widget_area">
+										<a href="#" class="search_results_close icon-cancel"></a>
+										<div class="search_results_content"></div>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="top_panel_title_wrap">
+					<div class="content_wrap">
+						<div class="top_panel_title">
+							<div class="page_title">
+								<h1 class="page_caption">@ViewData["Title"]</h1>
+							</div>
+							<div class="breadcrumbs">
+								<a class="breadcrumbs_item home" href="/">Home</a>
+								<span class="breadcrumbs_delimiter"></span>
+								@*<span class="breadcrumbs_item current">Contacts</span>*@
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<partial name="~/Views/Shared/_MenuMobile.cshtml" />
+            <div class="page_content_wrap scheme_default">
+				@RenderBody()
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - WebsiteFJW - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+			<partial name="~/Views/Shared/_Footer.cshtml" />
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    </div>
+    
+    <script type='text/javascript' src='~/js/vendor/jquery.js'></script>
+    <script type='text/javascript' src='~/js/vendor/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='~/js/vendor/plugins/trx_addons/js/trx_addons.js '></script>
+    <script type='text/javascript' src='~/js/__scripts.js '></script>
+    <script type='text/javascript' src='~/js/custom/custom.js '></script>
+    <script type='text/javascript' src='~/js/custom/_form_contact.js '></script>
+    <a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

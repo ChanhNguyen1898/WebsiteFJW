@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Contacts Us";
+    ViewBag.PCurrent = "contacts";
+    ViewBag.CCurrent = "contacts";
+}
+@section Styles {
+}
+@section Scripts {
+}
+<div class="content_wrap">
+	<div class="post_content entry-content">
+		<div class="wpb_wrapper">
+			<img src="~/images/img/map-contact.png" />
+			<!-- /.sc_googlemap_wrap -->
+		</div>
+	</div>
+</div>
+<div class="wrap">
+	<div class="row">
+		<div class="wpb_column vc_column_container column-12_12">
+			<div class="vc_column-inner ">
+				<div class="content">
+					<div class="vc_empty_space  height_medium" style="height: 0px"></div>
+					<div class="sc_icons sc_icons_default sc_icons_size_large sc_align_center">
+						<div class="sc_icons_item">
+							<div class="sc_icons_icon sc_icons_icon_type_fontawesome icon-winery"><span class="sc_icons_icon_type_fontawesome icon-winery"></span></div>
+						</div>
+					</div>
+					<!-- /.sc_icons -->
+					<div class="sc_form sc_form_default sc_align_center">
+						<h2 class="sc_item_title sc_form_title">Get in touch</h2>
+						<h5 class="sc_item_subtitle sc_form_subtitle">We make wine with a thought of our customers, <br>therefore the team...</h5>
+						<form class="sc_form_form sc_input_hover_underline" method="post" action="include/contact-form.php">
+							<div class="sc_form_details trx_addons_columns_wrap">
+								<div class="trx_addons_column-1_2">
+									<label class="sc_form_field sc_form_field_name required">
+										<span class="sc_form_field_wrap"><input type="text" name="name" aria-required="true"><span class="sc_form_field_hover"><span class="sc_form_field_content" data-content="Name">Name</span></span></span>
+									</label>
+								</div><div class="trx_addons_column-1_2">
+									<label class="sc_form_field sc_form_field_email required">
+										<span class="sc_form_field_wrap"><input type="text" name="email" aria-required="true"><span class="sc_form_field_hover"><span class="sc_form_field_content" data-content="E-mail">E-mail</span></span></span>
+									</label>
+								</div>
+							</div><label class="sc_form_field sc_form_field_message required"><span class="sc_form_field_wrap"><textarea name="message" aria-required="true"></textarea><span class="sc_form_field_hover"><span class="sc_form_field_content" data-content="Message">Message</span></span>	</span></label>
+							<div class="sc_form_field sc_form_field_button"><button>Send Message</button></div>
+							<div class="trx_addons_message_box sc_form_result"></div>
+						</form>
+					</div>
+					<!-- /.sc_form -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- .entry-content -->
+	<!-- </.content> -->
+</div>
+<!-- </.content_wrap> -->
