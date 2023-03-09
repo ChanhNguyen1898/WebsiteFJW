@@ -1845,7 +1845,7 @@ figure.alignleft,figure.alignright {
   position: relative
 }
 
-body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+.body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
   width: 770px
 }
 
@@ -5476,8 +5476,8 @@ ul.instagram-pics li:before {
   margin-top: 6em
 }
 
-.remove_margins .site_footer_wrap {
-  margin-top: 0
+.remove_margins {
+  margin-bottom: -6em;
 }
 
 .footer_wrap_inner {
