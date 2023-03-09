@@ -3677,13 +3677,14 @@ aside .post_item+.post_item {
   overflow: hidden;
   position: relative;
   margin-bottom: 1.8em;
+}
+.post_featured_fullwide {
   min-height: 34.74em;
   margin: 3.8em 0 3.4em;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover
 }
-
 .post_featured_bg {
   background-position: center;
   background-size: cover;
