@@ -3047,13 +3047,13 @@ aside .post_item+.post_item {
   text-align: center
 }
 
-.top_panel_title:after {
+/*.top_panel_title:after {
   content: ' ';
   width: 1px;
   height: 3.8em;
   display: block;
   margin: 1.3em auto 2.7em
-}
+}*/
 
 .top_panel_title .post_meta {
   margin-top: 4.7em
@@ -3098,7 +3098,16 @@ aside .post_item+.post_item {
   font-weight: 700;
   font-style: italic;
   letter-spacing: 1px;
-  margin-top: .5em
+  margin-top: .5em;
+  text-align: center;
+}
+.breadcrumbs:after {
+    content: ' ';
+    width: 1px;
+    height: 3.8em;
+    display: block;
+    margin: 1.3em auto 2.7em;
+    background-color: #d7d7d7;
 }
 
 .breadcrumbs .breadcrumbs_item {
