@@ -1,5 +1,7 @@
 ﻿@{
 	ViewData["Title"] = "Single Post";
+	ViewBag.PCurrent = "blogarchive";
+	ViewBag.CCurrent = "singlepost";
 }
 @section Styles {
 }
@@ -11,7 +13,7 @@
 	<span class="breadcrumbs_delimiter"></span>
 	<a class="breadcrumbs_item cat_post" href="#">Post Formats</a>
 	<span class="breadcrumbs_delimiter"></span>
-	<span class="breadcrumbs_item current">Single Post</span>
+	<span class="breadcrumbs_item current">@ViewData["Title"]</span>
 </div>
 <div class="post_featured post_featured_fullwide" style="background-image:url(images/image-15.jpg);"></div>
 <div class="body single single-post postid-194 single-format-standard body_tag body_style_wide scheme_default blog_mode_post is_single sidebar_hide header_style_header-1 header_position_default header_title_on menu_style_top no_layout vc_responsive">

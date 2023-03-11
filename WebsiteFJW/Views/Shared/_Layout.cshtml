@@ -11,7 +11,8 @@
 	<link rel='stylesheet' id='woocommerce-layout-css' href='~/js/vendor/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='woocommerce-smallscreen-css' href='~/js/vendor/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
 	<link rel='stylesheet' id='woocommerce-general-css' href='~/js/vendor/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='laon_wine_house-font-google_fonts-css' href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic%7CLato:400,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
+	@RenderSection("Styles", required: false)
+	<link rel='stylesheet' id='laon_wine_house-font-google_fonts-css' href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic%7CLato:400,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
     <link rel='stylesheet' id='laon_wine_house-fontello-css' href='~/css/fontello/css/fontello-embedded.css' type='text/css' media='all' />
     <link rel='stylesheet' id='laon_wine_house-main-css' href='~/css/style.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='laon_wine_house-animation-css' href='~/css/animation.css' type='text/css' media='all' />
@@ -19,7 +20,6 @@
     <link rel='stylesheet' id='laon_wine_house-styles-css' href='~/css/__styles.css' type='text/css' media='all' />
     <link rel='stylesheet' id='laon_wine_house-custom-css' href='~/css/custom.css' type='text/css' media='all' />
     <link rel='stylesheet' id='laon_wine_house-responsive-css' href='~/css/responsive.min.css' type='text/css' media='all' />
-	@RenderSection("Styles", required: false)
 </head>
 <body class="page page-template-default body_tag body_style_wide scheme_default blog_mode_page is_single sidebar_hide header_style_header-1 header_position_default header_title_on menu_style_top vc_responsive desktop_layout">
 	<div class="body_wrap">
@@ -35,11 +35,6 @@
 								<ul id="menu_main" class="menu_main_nav">
 									<li class="menu-item">
 										<a href="/"><span>Home</span></a>
-										@*<ul class="sub-menu">
-											<li class="menu-item"><a href="index.html"><span>Home 1</span></a></li>
-											<li class="menu-item"><a href="home2.html"><span>Home 2</span></a></li>
-											<li class="menu-item"><a href="home3.html"><span>Home 3</span></a></li>
-										</ul>*@
 									</li>
 									<li class="menu-item@(ViewBag.PCurrent == "winelist" ? " current-menu-parent" : "")">
 										<a href="WineList"><span>Our range</span></a>
@@ -47,25 +42,9 @@
 									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "blogarchive" ? " current-menu-parent" : "")">
 										<a href="BlogArchive"><span>The Journal</span></a>
 										<ul class="sub-menu">
-											@*<li class="menu-item menu-item-has-children">
-												<a href="blog-style-chess-2-columns-2.html"><span>Blog Style 1</span></a>
-												<ul class="sub-menu">
-													<li class="menu-item"><a href="blog-style-chess-2-columns-2.html"><span>2 columns</span></a></li>
-													<li class="menu-item"><a href="blog-style-chess-4-columns.html"><span>4 columns</span></a></li>
-													<li class="menu-item"><a href="blog-style-chess-6-columns.html"><span>6 columns</span></a></li>
-												</ul>
-											</li>
-											<li class="menu-item menu-item-has-children">
-												<a href="blog-style-2.html"><span>Blog Style 2</span></a>
-												<ul class="sub-menu">
-													<li class="menu-item"><a href="blog-archive.html"><span>1 column</span></a></li>
-													<li class="menu-item"><a href="blog-style-2.html"><span>2 columns</span></a></li>
-													<li class="menu-item"><a href="blog-style-classic-3-columns.html"><span>3 columns</span></a></li>
-												</ul>
-											</li>*@
-											<li class="menu-item menu-item-has-children@(ViewBag.CCurrent == "portfolio" ? " current-menu-item" : "")">
+											<li class="menu-item@(ViewBag.CCurrent == "portfolio" ? " current-menu-item" : "")">
 												<a href="Portfolio"><span>Portfolio</span></a>
-												<ul class="sub-menu">
+												@*<ul class="sub-menu">
 													<li class="menu-item@(ViewBag.CCurrent == "portfolio2c" ? " current-menu-item" : "")">
 														<a href="Portfolio2c"><span>2 columns</span></a>
 													</li>
@@ -75,10 +54,10 @@
 													<li class="menu-item@(ViewBag.CCurrent == "portfolio4c" ? " current-menu-item" : "")">
 														<a href="Portfolio4c"><span>4 columns</span></a>
 													</li>
-												</ul>
+												</ul>*@
 											</li>
-											<li class="menu-item@(ViewBag.CCurrent == "postformats" ? " current-menu-item" : "")">
-												<a href="PostFormats"><span>Post Formats</span></a>
+											<li class="menu-item@(ViewBag.CCurrent == "category" ? " current-menu-item" : "")">
+												<a href="BlogArchive"><span>Post Formats</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "singlepost" ? " current-menu-item" : "")">
 												<a href="SinglePost"><span>Post with comments</span></a>
@@ -100,7 +79,7 @@
 										</ul>
 									</li>
 									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "features" ? " current-menu-parent" : "")">
-										<a href="#"><span>Features</span></a>
+										<a><span>Features</span></a>
 										<ul class="sub-menu">
 											<li class="menu-item@(ViewBag.CCurrent == "typography" ? " current-menu-item" : "")">
 												<a href="Typography"><span>Typography</span></a>
@@ -159,10 +138,10 @@
     
     <script type='text/javascript' src='~/js/vendor/jquery.js'></script>
     <script type='text/javascript' src='~/js/vendor/jquery-migrate.min.js'></script>
-    <script type='text/javascript' src='~/js/vendor/plugins/trx_addons/js/trx_addons.js '></script>
+	<script type='text/javascript' src='~/js/custom/custom.js '></script>
+	@RenderSection("Scripts", required: false)
+	<script type='text/javascript' src='~/js/vendor/plugins/trx_addons/js/trx_addons.js '></script>
     <script type='text/javascript' src='~/js/__scripts.js '></script>
-    <script type='text/javascript' src='~/js/custom/custom.js '></script>
     <a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
-    @RenderSection("Scripts", required: false)
 </body>
 </html>

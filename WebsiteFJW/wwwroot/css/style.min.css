@@ -1917,7 +1917,7 @@ figure.alignleft,figure.alignright {
   background-repeat: no-repeat;
   background-size: cover;
   padding: .1px 0;
-  margin-bottom: 1.1em
+  margin-bottom: 0;
 }
 
 .remove_margins .top_panel {
@@ -2231,7 +2231,8 @@ figure.alignleft,figure.alignright {
 .menu_header_nav>li,.menu_main_nav>li {
   position: relative;
   float: left;
-  z-index: 20
+  z-index: 20;
+  cursor: pointer;
 }
 
 .menu_main_nav>li+li {
