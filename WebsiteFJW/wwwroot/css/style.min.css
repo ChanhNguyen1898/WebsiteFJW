@@ -3062,7 +3062,8 @@ aside .post_item+.post_item {
 
 .top_panel_title .page_caption {
   margin: 1.15em auto 0;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .top_panel_title .post_meta+.page_caption {
@@ -3112,9 +3113,10 @@ aside .post_item+.post_item {
 }
 
 .breadcrumbs .breadcrumbs_item {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    text-transform: capitalize;
 }
 
 .breadcrumbs .breadcrumbs_delimiter {

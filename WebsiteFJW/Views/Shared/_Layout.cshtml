@@ -1,4 +1,18 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+
+@inject IOptions<RequestLocalizationOptions> LocOptions
+
+@{
+	string returnUrl = ViewContext.HttpContext.Request.Path;
+
+	var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+	var cultureItems = LocOptions.Value.SupportedUICultures
+		.Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
+		.ToList();
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -101,6 +115,21 @@
 										</ul>
 									</li>
 								</ul>
+								<div class="nav-item">
+									<form asp-action="ChangeLanguage" asp-controller="Home" method="post">
+
+										<input type="hidden" id="returnUrl" name="returnUrl" value="@returnUrl" />
+
+										<select id="culture"
+												name="culture"
+												class="form-control"
+												onchange="this.form.submit();"
+												asp-items="cultureItems"
+												asp-for="@requestCulture.RequestCulture.UICulture.Name">
+										</select>
+
+									</form>
+								</div>
 								<div class="search_wrap search_style_fullscreen">
 									<div class="search_form_wrap">
 										<form role="search" method="get" class="search_form" action="#">
@@ -115,15 +144,6 @@
 									</div>
 								</div>
 							</nav>
-						</div>
-					</div>
-				</div>
-				<div class="top_panel_title_wrap">
-					<div class="content_wrap">
-						<div class="top_panel_title">
-							<div class="page_title">
-								<h1 class="page_caption">@ViewData["Title"]</h1>
-							</div>
 						</div>
 					</div>
 				</div>
