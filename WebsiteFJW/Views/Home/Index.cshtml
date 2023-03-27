@@ -1,29 +1,13 @@
-﻿@using Microsoft.AspNetCore.Builder
-@using Microsoft.AspNetCore.Localization
-@using Microsoft.Extensions.Options
-
-@inject IOptions<RequestLocalizationOptions> LocOptions
-
-@{
-	string returnUrl = ViewContext.HttpContext.Request.Path;
-
-	var requestCulture = Context.Features.Get<IRequestCultureFeature>();
-	var cultureItems = LocOptions.Value.SupportedUICultures
-		.Select(c => new SelectListItem { 
-			Value = c.Name, Text = c.DisplayName 
-		})
-		.ToList();
-}
-@{
-    Layout = null;
+﻿@{
+	Layout = null;
 }
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website FJW</title>
-    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Website FJW</title>
+	<link rel="icon" href="~/favicon.ico" type="image/x-icon">
 	<link rel='stylesheet' id='trx_addons-icons-css' href='~/js/vendor/plugins/trx_addons/css/font-icons/css/trx_addons_icons-embedded.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='trx_addons-css' href='~/js/vendor/plugins/trx_addons/css/trx_addons.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='woocommerce-layout-css' href='~/js/vendor/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
@@ -52,21 +36,6 @@
 							<a class="logo" href="/"><img src="~/images/logo.png" class="logo_main" alt="" /></a>
 						</div>
 					</div>
-				</div>
-				<div class="icons-multilang">
-					<form asp-action="ChangeLanguage" asp-controller="Home" method="post">
-
-						<input type="hidden" id="returnUrl" name="returnUrl" value="@returnUrl" />
-
-						<select id="culture"
-								name="culture"
-								class="form-control"
-								onchange="this.form.submit();"
-								asp-items="cultureItems"
-								asp-for="@requestCulture.RequestCulture.UICulture.Name">
-						</select>
-
-					</form>
 				</div>
 			</header>
 			<div class="menu_side_wrap scheme_dark">
@@ -97,9 +66,9 @@
 																<div class=&quot;wpb_text_column wpb_content_element  scheme_dark&quot;>
 																	<div class=&quot;wpb_wrapper&quot;>
 																		<p style=&quot;text-align: center;&quot;>
-																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Cabernet Sauvignon</a></span><br />
-																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>2013</span><br />
-																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quotProduct;>See Details</a></span>
+																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Nước Chanh Dây lên men</a></span><br />
+																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>Dòng sản phẩm FJ</span><br />
+																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quotProduct;>Xem chi tiết</a></span>
 																		</p>
 																	</div>
 																</div>
@@ -115,9 +84,9 @@
 																<div class=&quot;wpb_text_column wpb_content_element  scheme_dark&quot;>
 																	<div class=&quot;wpb_wrapper&quot;>
 																		<p style=&quot;text-align: center;&quot;>
-																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Classic Shardonnay</a></span><br />
-																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>2014</span><br />
-																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>See Details</a></span>
+																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Nuớc Cóc xanh lên men</a></span><br />
+																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>Dòng sản phầm FJ</span><br />
+																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>Xem chi tiết</a></span>
 																		</p>
 																	</div>
 																</div>
@@ -140,11 +109,7 @@
 												<div class="vc_empty_space  height_medium" style="height: 0px"></div>
 												<div class="wpb_text_column wpb_content_element  vc_custom_1469087355036">
 													<div class="wpb_wrapper">
-														<p style="text-align: center; font-size: 0.8421em; letter-spacing: 2px; line-height: 1.75em;">
-															<strong>
-																<span style="color: #ffffff;text-shadow: 1px 2px 0px darkred;">MỖI CHAI NƯỚC ÉP LEN MEN VÀ TRÀ HOA KOMBUCHA LÀ CẢ TÂM HỒN SÁNG TẠO</span>
-															</strong>
-														</p>
+														<p style="text-align: center; font-size: 0.8421em; letter-spacing: 2px; line-height: 1.75em;"><strong><span style="color: #ffffff;">MỖI CHAI NƯỚC ÉP LEN MEN VÀ TRÀ HOA KOMBUCHA LÀ CẢ TÂM HỒN SÁNG TẠO</span></strong></p>
 													</div>
 												</div>
 												<div class="vc_empty_space  height_huge" style="height: 0px"></div>
@@ -167,9 +132,9 @@
 																<div class=&quot;wpb_text_column wpb_content_element  scheme_dark&quot;>
 																	<div class=&quot;wpb_wrapper&quot;>
 																		<p style=&quot;text-align: center;&quot;>
-																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Johann Shiraz Cabernet</a></span><br />
-																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>2012</span><br />
-																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>See Details</a></span>
+																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;></a>Kombucha Hoa Hồng</span><br />
+																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>Dòng sản phẩm FT</span><br />
+																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>Xem chi tiết</a></span>
 																		</p>
 																	</div>
 																</div>
@@ -185,9 +150,9 @@
 																<div class=&quot;wpb_text_column wpb_content_element  scheme_dark&quot;>
 																	<div class=&quot;wpb_wrapper&quot;>
 																		<p style=&quot;text-align: center;&quot;>
-																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Classic Shardonnay</a></span><br />
-																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>2014</span><br />
-																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>See Details</a></span>
+																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Kombucha Hoa Lài (Nhài)</a></span><br />
+																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>Dòng sản phẩm FT</span><br />
+																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>Xem chi tiết</a></span>
 																		</p>
 																	</div>
 																</div>
@@ -398,7 +363,7 @@
 												<div id="sc_content_2046722897" class="sc_content sc_content_default sc_padding_large			">
 													<div class="sc_content_container">
 														<div class="sc_events sc_events_detailed" data-slides-min-width="150">
-															<h2 class="sc_item_title sc_events_title">Events</h2>
+															<h2 class="sc_item_title sc_events_title">Sự kiện</h2>
 															<div class="sc_events_content sc_item_content">
 																<a href="Event" class="sc_events_item"><span class="sc_events_item_date_wrap"><span class="sc_events_item_date">Mar. 21</span></span><span class="sc_events_item_title_wrap"><span class="sc_events_item_title">Presentation &#8216;Winemaking Is An Art&#8217;</span></span><span class="sc_events_item_time_wrap"><span class="sc_events_item_time">10:00 AM</span></span><span class="sc_events_item_button_wrap"><span class="sc_events_item_button">Details</span></span></a><a href="event.html" class="sc_events_item"><span class="sc_events_item_date_wrap"><span class="sc_events_item_date">Feb. 12</span></span><span class="sc_events_item_title_wrap"><span class="sc_events_item_title">Wine &#038; Cheese Lunch</span></span><span class="sc_events_item_time_wrap"><span class="sc_events_item_time">12:15 AM</span></span><span class="sc_events_item_button_wrap"><span class="sc_events_item_button">Details</span></span></a>
 															</div>
@@ -483,20 +448,20 @@
 													<div class="sc_promo_text sc_float_center" style="width: 100%;">
 														<div class="sc_promo_text_inner sc_align_center">
 															<div class="sc_promo_icon" data-icon="icon-winery"><span class="icon-winery"></span></div>
-															<h2 class="sc_item_title sc_promo_title">Get in touch</h2>
-															<h5 class="sc_item_subtitle sc_promo_subtitle">We make wine with a thought of our customers, therefore the team...</h5>
+															<h2 class="sc_item_title sc_promo_title">Liên hệ</h2>
+															<h5 class="sc_item_subtitle sc_promo_subtitle">Mỗi dòng sản phẩm đuợc lên men bằng cả trái tim</h5>
 															<div class="sc_promo_content sc_item_content">
 																<div class="wpb_text_column wpb_content_element ">
 																	<div class="wpb_wrapper">
-																		<p><em><strong>Address:</strong></em><br /> 3867 Robinson Road, Historic Oaklawn Plantation</p>
-																		<p><em><strong>Telephone:</strong></em><br /> +1 939 381 84 11</p>
+																		<p><em><strong>Địa chỉ:</strong></em><br /> 3867 Robinson Road, Historic Oaklawn Plantation</p>
+																		<p><em><strong>Điện thoại:</strong></em><br /> +84 </p>
 																		<p>
-																			<em><strong>E-mail:</strong></em><br /> clifton.carter20@laon.com
+																			<em><strong>E-mail:</strong></em><br />contact@fjw.vn
 																		</p>
 																	</div>
 																</div>
 															</div>
-															<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="#" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Join to laon wine house</span></span> </a>													</div>
+															<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="#" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Hãy liên hệ với chung tôi để đuợc tư vấn tốt hơn</span></span> </a>													</div>
 														</div>
 													</div>
 												</div>
@@ -517,7 +482,7 @@
 																<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48140.522977905624!2d-73.68252670432662!3d41.051881157538546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzA1LjgiTiA3M8KwMzgnNDUuMiJX!5e0!3m2!1sru!2sua!4v1466147063806&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen></iframe>		</div>
 														</div>
 													</div>
-													" data-arrowposition=""><i class="fa icon-placeholder" style="color:#ffffff;"></i></a>
+													" data-arrowposition=""><i class="fa icon-placeholder" style="color:#ffffff;"></i>Nhà phân phối 1</a>
 														</div>
 													</div>
 												</div>
