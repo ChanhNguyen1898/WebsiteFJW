@@ -122,3 +122,8 @@ var tribeEventsSingleMap = {
 /* <![CDATA[ */
 var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","review_rating_required":"yes"};
 /* ]]> */
+$(document).ready(function () {
+	$('.select2').select2({
+		closeOnSelect: false
+	});
+});
