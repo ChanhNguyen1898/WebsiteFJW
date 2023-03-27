@@ -6480,6 +6480,12 @@ iframe[name="google_conversion_frame"] {
 #tribe-events-footer .tribe-events-sub-nav, #tribe-events-header .tribe-events-sub-nav{
   overflow: visible;
 }
+.cq-hotspots span {
+    color: #ffffff;
+    position: absolute;
+    top: 44%;
+    left: 32%;
+}
 /*----------------------------- icons-multilang ----------------------------------------*/
 .icons-multilang {
     position: absolute;
