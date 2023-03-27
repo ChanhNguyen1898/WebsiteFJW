@@ -1,4 +1,20 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+
+@inject IOptions<RequestLocalizationOptions> LocOptions
+
+@{
+	string returnUrl = ViewContext.HttpContext.Request.Path;
+
+	var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+	var cultureItems = LocOptions.Value.SupportedUICultures
+		.Select(c => new SelectListItem { 
+			Value = c.Name, Text = c.DisplayName 
+		})
+		.ToList();
+}
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -36,6 +52,21 @@
 							<a class="logo" href="/"><img src="~/images/logo.png" class="logo_main" alt="" /></a>
 						</div>
 					</div>
+				</div>
+				<div class="icons-multilang">
+					<form asp-action="ChangeLanguage" asp-controller="Home" method="post">
+
+						<input type="hidden" id="returnUrl" name="returnUrl" value="@returnUrl" />
+
+						<select id="culture"
+								name="culture"
+								class="form-control"
+								onchange="this.form.submit();"
+								asp-items="cultureItems"
+								asp-for="@requestCulture.RequestCulture.UICulture.Name">
+						</select>
+
+					</form>
 				</div>
 			</header>
 			<div class="menu_side_wrap scheme_dark">
@@ -109,7 +140,11 @@
 												<div class="vc_empty_space  height_medium" style="height: 0px"></div>
 												<div class="wpb_text_column wpb_content_element  vc_custom_1469087355036">
 													<div class="wpb_wrapper">
-														<p style="text-align: center; font-size: 0.8421em; letter-spacing: 2px; line-height: 1.75em;"><strong><span style="color: #ffffff;">MỖI CHAI NƯỚC ÉP LEN MEN VÀ TRÀ HOA KOMBUCHA LÀ CẢ TÂM HỒN SÁNG TẠO</span></strong></p>
+														<p style="text-align: center; font-size: 0.8421em; letter-spacing: 2px; line-height: 1.75em;">
+															<strong>
+																<span style="color: #ffffff;text-shadow: 1px 2px 0px darkred;">MỖI CHAI NƯỚC ÉP LEN MEN VÀ TRÀ HOA KOMBUCHA LÀ CẢ TÂM HỒN SÁNG TẠO</span>
+															</strong>
+														</p>
 													</div>
 												</div>
 												<div class="vc_empty_space  height_huge" style="height: 0px"></div>

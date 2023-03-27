@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\chanhnguyen\\Website-FJW\\WebsiteFJW\\WebsiteFJW\\WebsiteFJW.csproj": {}
+    "D:\\VinaCapital\\A-Tan\\WebsiteFJW\\WebsiteFJW\\WebsiteFJW.csproj": {}
   },
   "projects": {
-    "D:\\chanhnguyen\\Website-FJW\\WebsiteFJW\\WebsiteFJW\\WebsiteFJW.csproj": {
+    "D:\\VinaCapital\\A-Tan\\WebsiteFJW\\WebsiteFJW\\WebsiteFJW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\chanhnguyen\\Website-FJW\\WebsiteFJW\\WebsiteFJW\\WebsiteFJW.csproj",
+        "projectUniqueName": "D:\\VinaCapital\\A-Tan\\WebsiteFJW\\WebsiteFJW\\WebsiteFJW.csproj",
         "projectName": "WebsiteFJW",
-        "projectPath": "D:\\chanhnguyen\\Website-FJW\\WebsiteFJW\\WebsiteFJW\\WebsiteFJW.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\chanhnguyen\\Website-FJW\\WebsiteFJW\\WebsiteFJW\\obj\\",
+        "projectPath": "D:\\VinaCapital\\A-Tan\\WebsiteFJW\\WebsiteFJW\\WebsiteFJW.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\VinaCapital\\A-Tan\\WebsiteFJW\\WebsiteFJW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

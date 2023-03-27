@@ -6480,3 +6480,10 @@ iframe[name="google_conversion_frame"] {
 #tribe-events-footer .tribe-events-sub-nav, #tribe-events-header .tribe-events-sub-nav{
   overflow: visible;
 }
+/*----------------------------- icons-multilang ----------------------------------------*/
+.icons-multilang {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    z-index: 999;
+}

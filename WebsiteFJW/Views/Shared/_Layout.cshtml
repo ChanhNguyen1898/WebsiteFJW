@@ -1,4 +1,4 @@
-﻿@using Microsoft.AspNetCore.Builder
+﻿@*@using Microsoft.AspNetCore.Builder
 @using Microsoft.AspNetCore.Localization
 @using Microsoft.Extensions.Options
 
@@ -11,7 +11,9 @@
 	var cultureItems = LocOptions.Value.SupportedUICultures
 		.Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
 		.ToList();
-}
+}*@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -114,12 +116,12 @@
 											<li class="menu-item@(ViewBag.CCurrent == "aboutus" ? " current-menu-item" : "")"><a href="AboutUs"><span>About Us</span></a></li>
 										</ul>
 									</li>
+									<li><a href="?culture=vi-VN">VN</a></li>
+									<li><a href="?culture=en-US">EN</a></li>
 								</ul>
-								<div class="nav-item">
+								@*<div class="nav-item">
 									<form asp-action="ChangeLanguage" asp-controller="Home" method="post">
-
 										<input type="hidden" id="returnUrl" name="returnUrl" value="@returnUrl" />
-
 										<select id="culture"
 												name="culture"
 												class="form-control"
@@ -127,9 +129,8 @@
 												asp-items="cultureItems"
 												asp-for="@requestCulture.RequestCulture.UICulture.Name">
 										</select>
-
 									</form>
-								</div>
+								</div>*@
 								<div class="search_wrap search_style_fullscreen">
 									<div class="search_form_wrap">
 										<form role="search" method="get" class="search_form" action="#">
