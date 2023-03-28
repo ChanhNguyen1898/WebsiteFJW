@@ -6482,9 +6482,9 @@ iframe[name="google_conversion_frame"] {
 }
 .cq-hotspots span {
     color: #ffffff;
-    position: absolute;
-    top: 44%;
-    left: 32%;
+}
+.cq-hotspots span.agents {
+    margin-left: 30px;
 }
 /*----------------------------- icons-multilang select2-container--default ----------------------------------------*/
 .icons-multilang {
