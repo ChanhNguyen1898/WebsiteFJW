@@ -2430,9 +2430,9 @@ body.mobile_layout.menu_style_side {
 }
 
 .mobile_layout .menu_mobile_button {
-  top: 4.25em;
-  right: 2em;
-  z-index: 5
+    top: 65px;
+    right: 30px;
+    z-index: 5
 }
 
 .mobile_layout .menu_mobile_inner {
@@ -5475,6 +5475,9 @@ ul.instagram-pics li:before {
 
 /* 10. Footer areas
 -------------------------------------------------------------- */
+.home.remove_margins .site_footer_wrap {
+    margin-top: 0;
+}
 .site_footer_wrap {
   margin-top: 6em
 }
@@ -6486,14 +6489,30 @@ iframe[name="google_conversion_frame"] {
 .cq-hotspots span.agents {
     margin-left: 30px;
 }
-/*----------------------------- icons-multilang select2-container--default ----------------------------------------*/
-.icons-multilang {
+/*----------------------------- icons-multilang ----------------------------------------*/
+.menu_mobile.opened .icons-multilang {
     position: absolute;
-    top: 10%;
-    right: 3%;
-    z-index: 999;
+    top: 25px;
+    right: 190px;
+    z-index: 99999;
+    display: flex;
 }
-
+.icons-multilang a {
+    margin-left: 5px;
+}
+.home .top_panel_navi .icons-multilang {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    z-index: 99999;
+}
+.header_layout .top_panel_navi .icons-multilang {
+    position: fixed;
+    top: 23px;
+    right: 60px;
+    z-index: 99999;
+}
+/*----------------------------- select2-container--default ----------------------------------------*/
 .select2-container--default .select2-selection--single,
 .select2-selection .select2-selection--single {
     border: 1px solid #d2d6de;
