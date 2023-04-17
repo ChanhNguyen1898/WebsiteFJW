@@ -1,14 +1,23 @@
-﻿<div class="menu_mobile_overlay"></div>
+﻿@using WebsiteFJW.Controllers
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<HomeController> Localizer
+
+<div class="menu_mobile_overlay"></div>
 <div class="menu_mobile scheme_dark">
 	<div class="menu_mobile_inner">
+		<div class="icons-multilang">
+			<a href="?culture=vi-VN"><img src="~/images/icons/ic-vn.png" /></a>
+			<a href="?culture=en-US"><img src="~/images/icons/ic-en.png" /></a>
+		</div>
 		<a class="menu_mobile_close icon-cancel"></a>
 		<nav class="menu_mobile_nav_area">
 			<ul id="menu_mobile" class="menu_mobile_nav">
 				<li class="menu-item">
-					<a href="/"><span>Home</span></a>
+					<a href="/"><span>@Localizer["menu1"]</span></a>
 				</li>
 				<li class="menu-item">
-					<a href="WineList"><span>Our range</span></a>
+					<a href="WineList"><span>@Localizer["menu2"]</span></a>
 				</li>
 				<li class="menu-item menu-item-has-children">
 					<a href="BlogArchive"><span>The Journal</span></a>
