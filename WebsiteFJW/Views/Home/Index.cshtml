@@ -1,4 +1,8 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer ViewLocalizer
+@{
 	Layout = null;
 }
 <!DOCTYPE html>
@@ -57,7 +61,7 @@
 									<div class="wpb_column vc_column_container column-3_12">
 										<div class="vc_column-inner ">
 											<div class="wpb_wrapper">
-												<div style="width:" class="cqtooltip-wrapper hide_on_mobile" data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="light" data-trigger="hover" data-maxwidth="210" data-marginoffset="" data-isdisplayall="off" data-displayednum="1">
+												<div class="cqtooltip-wrapper hide_on_mobile" data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="light" data-trigger="hover" data-maxwidth="210" data-marginoffset="" data-isdisplayall="off" data-displayednum="1">
 													<img src="~/images/spacer.png" alt="" />
 													<div class="cq-hotspots">
 														<div class="hotspot-item pulse-white " style="top:60%;left:20%;" data-top="60%" data-left="20%">
@@ -113,7 +117,7 @@
 												<div class="vc_empty_space  height_medium" style="height: 0px"></div>
 												<div class="wpb_text_column wpb_content_element  vc_custom_1469087355036">
 													<div class="wpb_wrapper">
-														<p style="text-align: center; font-size: 0.8421em; letter-spacing: 2px; line-height: 1.75em;"><strong><span style="color: #ffffff;">MỖI CHAI NƯỚC ÉP LEN MEN VÀ TRÀ HOA KOMBUCHA LÀ CẢ TÂM HỒN SÁNG TẠO</span></strong></p>
+														<p style="text-align: center; font-size: 0.8421em; letter-spacing: 2px; line-height: 1.75em;"><strong><span style="color: #ffffff;">@ViewLocalizer["slogan"]</span></strong></p>
 													</div>
 												</div>
 												<div class="vc_empty_space  height_huge" style="height: 0px"></div>
@@ -178,19 +182,22 @@
 													<div class="sc_promo_text trx_addons_stretch_height" style="width: 50%;float: right;">
 														<div class="sc_promo_text_inner sc_align_center">
 															<div class="sc_promo_icon" data-icon="icon-grape-3"><span class="icon-grape-3"></span></div>
-															<h2 class="sc_item_title sc_promo_title">Định hướng phát triển</h2>
-															<h5 class="sc_item_subtitle sc_promo_subtitle">Là công ty dẫn đầu tạo ra dòng nước uống lên men tốt cho sức khoẻ</h5>
-															<div class="sc_item_descr sc_promo_descr">
-																Tập thể nhân viên công ty FJW luôn tâm huyết với kim chỉ nam là tạo ra được các dòng sản phẩm lên men tốt cho hệ tiêu hoá, không phẩm màu, không hoá chất bảo quản. 
-															</div>
+															<h2 class="sc_item_title sc_promo_title">@ViewLocalizer["section1_title"]</h2>
+															<h5 class="sc_item_subtitle sc_promo_subtitle">@ViewLocalizer["section1_slogan"]</h5>
+															<div class="sc_item_descr sc_promo_descr">@ViewLocalizer["section1_content"]</div>
 															<div class="sc_promo_content sc_item_content">
 																<div class="wpb_single_image wpb_content_element vc_align_center">
 																	<figure class="wpb_wrapper vc_figure">
-																		<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="297" height="105" src="~/images/sinature.png" class="vc_single_image-img attachment-full" alt="sinature" /></div>
+																		<div class="vc_single_image-wrapper vc_box_border_grey"><img width="297" height="105" src="~/images/sinature.png" class="vc_single_image-img attachment-full" alt="sinature" /></div>
 																	</figure>
 																</div>
 															</div>
-															<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="Contacts" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Xem Định huớng phát triển của chúng tôi</span></span> </a>																</div>
+															<div class="sc_item_button sc_promo_button sc_button_wrap">
+																<a href="Contacts" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text">
+																		<span class="sc_button_title">@ViewLocalizer["section1_button"]</span>
+																	</span>
+																</a>
+															</div>
 														</div>
 													</div>
 												</div>
@@ -208,26 +215,14 @@
 													<div class="sc_promo_text trx_addons_stretch_height" style="width: 50%;float: left;">
 														<div class="sc_promo_text_inner sc_align_center">
 															<div class="sc_promo_icon" data-icon="icon-grape-leafs"><span class="icon-grape-leafs"></span></div>
-															<h2 class="sc_item_title sc_promo_title">Nguồn gốc của nước trái cây lên men</h2>
-															<h5 class="sc_item_subtitle sc_promo_subtitle">Và sản phẩm đặt trưng của FJW có gì khác?</h5>
-															<div class="sc_item_descr sc_promo_descr">
-																<div>
-																	<dl>
-																		<dt>NGUỒN GỐC CỦA NUỚC TRÁI CÂY LÊN MEN</dt>
-																		<dd>Nuớc trái cây lên men đã tồn tại từ nhiều thế kỹ trước, có thể bắt nguồn từ người Hy Lạp và La Mã cổ đại. Những nền văn minh này là một số nền văn minh đầu tiên tạo ra nuớc trái cây lên men từ nước trái táo. Họ sẽ
-																	ép táo ra và để chúng trong các thùng to. Quá trình này sẽ tạo ra loại thức uống vừa có cồn vừa có ga.</dd>
-																	</dl>
-																	<dl>
-																		<dt>SỰ KHÁC BIỆT CỦA NUỚC TRÁI CÂY LÊN MEN KHÔNG NỒNG ĐỘ CỒN</dt>
-																		<dd>Đây cũng là hướng đi sản phẩm mà FJW đang theo đuổi - là nước trái cây làm từ các loại trái cây địa phương với sư cải tiến trong quá trình lên men được thực hiện theo công nghệ độc quyền của FJW, được nghiên cứu bởi phòng phát triển sản phẩm. Thường ướp lạnh khi uống hoặc uống cùng đá viên hoặc được dùng làm nguyên liệu pha chế nước uống.</dd>
-																	</dl>
-																	
-
-																	
-																	
-																</div>
+															<h2 class="sc_item_title sc_promo_title">@ViewLocalizer["section2_title"]</h2>
+															<h5 class="sc_item_subtitle sc_promo_subtitle">@ViewLocalizer["section2_slogan"]</h5>
+															<div class="sc_item_descr sc_promo_descr">@ViewLocalizer["section2_content"]</div>
+															<div class="sc_item_button sc_promo_button sc_button_wrap">
+																<a href="AboutUs" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span>
+																	<span class="sc_button_text"><span class="sc_button_title">@ViewLocalizer["section2_button"]</span></span>
+																</a>
 															</div>
-															<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="AboutUs" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Xem thêm</span></span> </a>																</div>
 														</div>
 													</div>
 												</div>
@@ -357,23 +352,13 @@
 													<div class="sc_promo_text" style="width: 100%;">
 														<div class="sc_promo_text_inner sc_align_center">
 															<div class="sc_promo_icon" data-icon="icon-bottles"><span class="icon-bottles"></span></div>
-															<h2 class="sc_item_title sc_promo_title">Sản phẩm</h2>
-															<h5 class="sc_item_subtitle sc_promo_subtitle">Nước trái cây lên men và Trà hoa lên men Kombucha</h5>
-															<div class="sc_item_descr sc_promo_descr">
-																 Chúng tôi luôn tâm huyết sản xuất ra các dòng nước Trái cây lên men và Trà hoa Kombucha mới lạ và đầy thú vị - dành cho những nguời luôn khao khát tìm kiếm sự đổi mới, sáng tạo,giàu Vitamin C và yêu chiều hệ tiêu hoá.
-																Đặc biệt hơn là các dòng sản phẩm của FJW hoàn toàn không chất bảo quản.
-																<dl>
-																	<dt>Hiện tại, FJW đang có 2 dòng nước lên men không độ cồn chính:</dt>
-																	<dd>
-																			- Nước ép lên men không cồn CÓC XANH: Vị ngọt nhẹ, thanh mát
-																			- Nước ép lên mên không cồn CHANH DÂY: Vị chua, sảng khoái
-																			- Trà hoa lên men Kombucha: Hoa Hồng, Hoa Cúc, Hoa Lài, Hoa Atiso Đỏ
-																		
-																	</dd>
-																</dl>
-															</div>
+															<h2 class="sc_item_title sc_promo_title">@ViewLocalizer["section3_title"]</h2>
+															<h5 class="sc_item_subtitle sc_promo_subtitle">@ViewLocalizer["section3_slogan"]</h5>
+															<div class="sc_item_descr sc_promo_descr">@ViewLocalizer["section3_content"]</div>
 															<div class="sc_item_button sc_promo_button sc_button_wrap">
-																<a href="WineList" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Chi tiết sản phẩm</span></span> </a>
+																<a href="WineList" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span>
+																	<span class="sc_button_text"><span class="sc_button_title">@ViewLocalizer["section3_button"]</span></span>
+																</a>
 															</div>
 														</div>
 													</div>
