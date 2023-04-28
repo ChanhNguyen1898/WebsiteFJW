@@ -40,6 +40,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "LazZiya.ExpressLocalization": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
+            "LazZiya.TagHelpers": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
               "version": "[2.2.0, )"

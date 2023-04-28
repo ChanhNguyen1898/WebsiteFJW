@@ -66,6 +66,8 @@ D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\bin\Debug\netcoreapp3.1\Microsoft.Ext
 D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.csproj.AssemblyReference.cache
+D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.Resources.Controllers.HomeController.en-US.resources
+D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.Resources.Controllers.HomeController.vi-VN.resources
 D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.Resources.Views.WineList.Index.en-US.resources
 D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.Resources.Views.WineList.Index.vi-VN.resources
 D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.csproj.GenerateResource.cache
@@ -113,3 +115,8 @@ D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.cs
 D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.dll
 D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.pdb
 D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.genruntimeconfig.cache
+D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\bin\Debug\netcoreapp3.1\LazZiya.ExpressLocalization.dll
+D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.MvcApplicationPartsAssemblyInfo.cs
+D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\bin\Debug\netcoreapp3.1\LazZiya.TagHelpers.dll
+D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.Resources.Views.Home.Index.en-US.resources
+D:\VinaCapital\A-Tan\WebsiteFJW\WebsiteFJW\obj\Debug\netcoreapp3.1\WebsiteFJW.Resources.Views.Home.Index.vi-VN.resources
