@@ -117,22 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="section1_button" xml:space="preserve">
-    <value>See Our Oriented development</value>
-  </data>
-  <data name="section1_content" xml:space="preserve">
-    <value>The collective staff of FJW company is always dedicated to the guideline of creating good fermented products for the digestive system, without colorants, without preservatives.</value>
-  </data>
-  <data name="section1_slogan" xml:space="preserve">
-    <value>As the leading company in creating healthy fermented drink line</value>
-  </data>
-  <data name="section1_title" xml:space="preserve">
-    <value>Oriented development</value>
-  </data>
-  <data name="section2_button" xml:space="preserve">
+  <data name="about_button" xml:space="preserve">
     <value>See More</value>
   </data>
-  <data name="section2_content" xml:space="preserve">
+  <data name="about_content" xml:space="preserve">
     <value>&lt;dl&gt;
 &lt;dt&gt;The Origin of Fermented Fruit Juice&lt;/dt&gt;
 &lt;dd&gt;Fermented juice has existed for centuries, possibly dating back to the ancient Greeks and Romans. These civilizations were some of the first to create fermented juices from apple juice. They would
@@ -143,16 +131,116 @@ Squeeze the apples and place them in large bins. This process will create a drin
 &lt;dd&gt;This is also the product direction that FJW is pursuing - a juice made from local fruits with an improvement in the fermentation process made by FJW's proprietary technology, researched researched by the product development department. Usually chilled when drinking or drinking with ice cubes or used as an ingredient in drinking water.&lt;/dd&gt;
 &lt;/dl&gt;</value>
   </data>
-  <data name="section2_slogan" xml:space="preserve">
+  <data name="about_slogan" xml:space="preserve">
     <value>And what's different about FJW's featured products?</value>
   </data>
-  <data name="section2_title" xml:space="preserve">
+  <data name="about_title" xml:space="preserve">
     <value>Origin of fermented juice</value>
   </data>
-  <data name="section3_button" xml:space="preserve">
+  <data name="contact_btn" xml:space="preserve">
+    <value>Please contact me for better advice</value>
+  </data>
+  <data name="contact_des" xml:space="preserve">
+    <value>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Address:&lt;/strong&gt;&lt;/em&gt;&lt;br&gt; S5-02.17 The Sun Avenue, 28 Mai Chi Tho, An Phu, Thu Duc City, HCMC&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Phone:&lt;/strong&gt;&lt;/em&gt;&lt;br&gt; +84 937 352 162&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;&lt;strong&gt;E-mail:&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;contact@fjw.vn
+&lt;/p&gt;</value>
+  </data>
+  <data name="contact_subtitle" xml:space="preserve">
+    <value>Each product line is fermented with the heart</value>
+  </data>
+  <data name="contact_title" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="events_btn_all" xml:space="preserve">
+    <value>All Events</value>
+  </data>
+  <data name="events_btn_detail" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="events_title" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="event_date1" xml:space="preserve">
+    <value>Mar. 21</value>
+  </data>
+  <data name="event_date2" xml:space="preserve">
+    <value>Feb. 12</value>
+  </data>
+  <data name="event_featured_add" xml:space="preserve">
+    <value>No. 1, Pham Ngoc Thach, District 1, HCMC</value>
+  </data>
+  <data name="event_featured_datetime" xml:space="preserve">
+    <value>Saturday, May 7, 2016</value>
+  </data>
+  <data name="event_featured_des" xml:space="preserve">
+    <value>&lt;span&gt;Youth Cultural House&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;b&gt;6-9 PM&lt;/b&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="event_featured_subtitle" xml:space="preserve">
+    <value>VIETNAM BREAKFAST</value>
+  </data>
+  <data name="event_featured_title" xml:space="preserve">
+    <value>Bread Festival</value>
+  </data>
+  <data name="event_time1" xml:space="preserve">
+    <value>10:00 AM</value>
+  </data>
+  <data name="event_time2" xml:space="preserve">
+    <value>12:15 AM</value>
+  </data>
+  <data name="event_title1" xml:space="preserve">
+    <value>Presentation ‘Winemaking Is An Art’</value>
+  </data>
+  <data name="event_title2" xml:space="preserve">
+    <value>Wine &amp; Cheese Lunch</value>
+  </data>
+  <data name="info_des1" xml:space="preserve">
+    <value>Information is updating.......................</value>
+  </data>
+  <data name="info_des2" xml:space="preserve">
+    <value>Information is updating.......................</value>
+  </data>
+  <data name="info_des3" xml:space="preserve">
+    <value>Information is updating.......................</value>
+  </data>
+  <data name="info_title1" xml:space="preserve">
+    <value>Certifications</value>
+  </data>
+  <data name="info_title2" xml:space="preserve">
+    <value>Store FJW</value>
+  </data>
+  <data name="info_title3" xml:space="preserve">
+    <value>Share the business</value>
+  </data>
+  <data name="npp_bac" xml:space="preserve">
+    <value>Northern Distributor</value>
+  </data>
+  <data name="npp_hcm" xml:space="preserve">
+    <value>Ho Chi Minh Distributor</value>
+  </data>
+  <data name="npp_nam" xml:space="preserve">
+    <value>Southern Distributor</value>
+  </data>
+  <data name="npp_trung" xml:space="preserve">
+    <value>Central Distributor</value>
+  </data>
+  <data name="orient_button" xml:space="preserve">
+    <value>See Our Oriented development</value>
+  </data>
+  <data name="orient_content" xml:space="preserve">
+    <value>The collective staff of FJW company is always dedicated to the guideline of creating good fermented products for the digestive system, without colorants, without preservatives.</value>
+  </data>
+  <data name="orient_slogan" xml:space="preserve">
+    <value>As the leading company in creating healthy fermented drink line</value>
+  </data>
+  <data name="orient_title" xml:space="preserve">
+    <value>Oriented development</value>
+  </data>
+  <data name="product_button" xml:space="preserve">
     <value>Product details</value>
   </data>
-  <data name="section3_content" xml:space="preserve">
+  <data name="product_content" xml:space="preserve">
     <value>We are always passionate about producing new and exciting lines of Fermented Fruit Juices and Kombucha Flower Teas - for those who are always looking for innovation, creativity, rich in Vitamin C and love the digestive system. chemical.
 More specifically, FJW's product lines are completely preservative-free.
 &lt;dl&gt;
@@ -165,10 +253,10 @@ More specifically, FJW's product lines are completely preservative-free.
 &lt;/dd&gt;
 &lt;/dl&gt;</value>
   </data>
-  <data name="section3_slogan" xml:space="preserve">
+  <data name="product_slogan" xml:space="preserve">
     <value>Kombucha Fermented Fruit Juice and Fermented Flower Tea</value>
   </data>
-  <data name="section3_title" xml:space="preserve">
+  <data name="product_title" xml:space="preserve">
     <value>Product</value>
   </data>
   <data name="slogan" xml:space="preserve">

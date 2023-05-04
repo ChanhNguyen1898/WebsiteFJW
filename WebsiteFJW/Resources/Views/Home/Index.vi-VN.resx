@@ -117,22 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="section1_button" xml:space="preserve">
-    <value>Xem Định huớng phát triển của chúng tôi</value>
-  </data>
-  <data name="section1_content" xml:space="preserve">
-    <value>Tập thể nhân viên công ty FJW luôn tâm huyết với kim chỉ nam là tạo ra được các dòng sản phẩm lên men tốt cho hệ tiêu hoá, không phẩm màu, không hoá chất bảo quản.</value>
-  </data>
-  <data name="section1_slogan" xml:space="preserve">
-    <value>Là công ty dẫn đầu tạo ra dòng nước uống lên men tốt cho sức khoẻ</value>
-  </data>
-  <data name="section1_title" xml:space="preserve">
-    <value>Định hướng phát triển</value>
-  </data>
-  <data name="section2_button" xml:space="preserve">
+  <data name="about_button" xml:space="preserve">
     <value>Xem thêm</value>
   </data>
-  <data name="section2_content" xml:space="preserve">
+  <data name="about_content" xml:space="preserve">
     <value>&lt;dl&gt;
 																		&lt;dt&gt;NGUỒN GỐC CỦA NUỚC TRÁI CÂY LÊN MEN&lt;/dt&gt;
 																		&lt;dd&gt;Nuớc trái cây lên men đã tồn tại từ nhiều thế kỹ trước, có thể bắt nguồn từ người Hy Lạp và La Mã cổ đại. Những nền văn minh này là một số nền văn minh đầu tiên tạo ra nuớc trái cây lên men từ nước trái táo. Họ sẽ
@@ -143,16 +131,116 @@
 																		&lt;dd&gt;Đây cũng là hướng đi sản phẩm mà FJW đang theo đuổi - là nước trái cây làm từ các loại trái cây địa phương với sư cải tiến trong quá trình lên men được thực hiện theo công nghệ độc quyền của FJW, được nghiên cứu bởi phòng phát triển sản phẩm. Thường ướp lạnh khi uống hoặc uống cùng đá viên hoặc được dùng làm nguyên liệu pha chế nước uống.&lt;/dd&gt;
 																	&lt;/dl&gt;</value>
   </data>
-  <data name="section2_slogan" xml:space="preserve">
+  <data name="about_slogan" xml:space="preserve">
     <value>Và sản phẩm đặt trưng của FJW có gì khác?</value>
   </data>
-  <data name="section2_title" xml:space="preserve">
+  <data name="about_title" xml:space="preserve">
     <value>Nguồn gốc nước trái cây lên men</value>
   </data>
-  <data name="section3_button" xml:space="preserve">
+  <data name="contact_btn" xml:space="preserve">
+    <value>Hãy liên hệ với chung tôi để đuợc tư vấn tốt hơn</value>
+  </data>
+  <data name="contact_des" xml:space="preserve">
+    <value>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Địa chỉ:&lt;/strong&gt;&lt;/em&gt;&lt;br&gt; S5-02.17 The Sun Avenue, 28 Mai Chí Thọ, An Phú, Tp.Thủ Đức, TpHCM&lt;/p&gt;
+																		&lt;p&gt;&lt;em&gt;&lt;strong&gt;Điện thoại:&lt;/strong&gt;&lt;/em&gt;&lt;br&gt; +84 937 352 162&lt;/p&gt;
+																		&lt;p&gt;
+																			&lt;em&gt;&lt;strong&gt;E-mail:&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;contact@fjw.vn
+																		&lt;/p&gt;</value>
+  </data>
+  <data name="contact_subtitle" xml:space="preserve">
+    <value>Mỗi dòng sản phẩm đuợc lên men bằng cả trái tim</value>
+  </data>
+  <data name="contact_title" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="events_btn_all" xml:space="preserve">
+    <value>Xem thêm</value>
+  </data>
+  <data name="events_btn_detail" xml:space="preserve">
+    <value>Chi tiết</value>
+  </data>
+  <data name="events_title" xml:space="preserve">
+    <value>Sự kiện</value>
+  </data>
+  <data name="event_date1" xml:space="preserve">
+    <value>Mar. 21</value>
+  </data>
+  <data name="event_date2" xml:space="preserve">
+    <value>Feb. 12</value>
+  </data>
+  <data name="event_featured_add" xml:space="preserve">
+    <value>Số 1, Phạm Ngọc Thạch, Quận 1, TpHCM</value>
+  </data>
+  <data name="event_featured_datetime" xml:space="preserve">
+    <value>Saturday, May 7, 2016</value>
+  </data>
+  <data name="event_featured_des" xml:space="preserve">
+    <value>&lt;span&gt;Nhà văn hoá Thanh Niên&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;b&gt;6-9 PM&lt;/b&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="event_featured_subtitle" xml:space="preserve">
+    <value>BÁNH MÌ VIỆT NAM</value>
+  </data>
+  <data name="event_featured_title" xml:space="preserve">
+    <value>Lễ hội bánh mì</value>
+  </data>
+  <data name="event_time1" xml:space="preserve">
+    <value>10:00 AM</value>
+  </data>
+  <data name="event_time2" xml:space="preserve">
+    <value>12:15 AM</value>
+  </data>
+  <data name="event_title1" xml:space="preserve">
+    <value>Presentation ‘Winemaking Is An Art’</value>
+  </data>
+  <data name="event_title2" xml:space="preserve">
+    <value>Wine &amp; Cheese Lunch</value>
+  </data>
+  <data name="info_des1" xml:space="preserve">
+    <value>Thông tin đang cập nhật</value>
+  </data>
+  <data name="info_des2" xml:space="preserve">
+    <value>Thông tin đang cập nhật</value>
+  </data>
+  <data name="info_des3" xml:space="preserve">
+    <value>Thông tin đang cập nhật</value>
+  </data>
+  <data name="info_title1" xml:space="preserve">
+    <value>Các Chứng nhận</value>
+  </data>
+  <data name="info_title2" xml:space="preserve">
+    <value>Cửa hàng FJW</value>
+  </data>
+  <data name="info_title3" xml:space="preserve">
+    <value>Chia sẽ kinh doanh</value>
+  </data>
+  <data name="npp_bac" xml:space="preserve">
+    <value>NPP Miền Bắc</value>
+  </data>
+  <data name="npp_hcm" xml:space="preserve">
+    <value>NPP Hồ Chí Minh</value>
+  </data>
+  <data name="npp_nam" xml:space="preserve">
+    <value>NPP Miền Nam</value>
+  </data>
+  <data name="npp_trung" xml:space="preserve">
+    <value>NPP Miền Trung</value>
+  </data>
+  <data name="orient_button" xml:space="preserve">
+    <value>Xem Định huớng phát triển của chúng tôi</value>
+  </data>
+  <data name="orient_content" xml:space="preserve">
+    <value>Tập thể nhân viên công ty FJW luôn tâm huyết với kim chỉ nam là tạo ra được các dòng sản phẩm lên men tốt cho hệ tiêu hoá, không phẩm màu, không hoá chất bảo quản.</value>
+  </data>
+  <data name="orient_slogan" xml:space="preserve">
+    <value>Là công ty dẫn đầu tạo ra dòng nước uống lên men tốt cho sức khoẻ</value>
+  </data>
+  <data name="orient_title" xml:space="preserve">
+    <value>Định hướng phát triển</value>
+  </data>
+  <data name="product_button" xml:space="preserve">
     <value>Chi tiết sản phẩm</value>
   </data>
-  <data name="section3_content" xml:space="preserve">
+  <data name="product_content" xml:space="preserve">
     <value>Chúng tôi luôn tâm huyết sản xuất ra các dòng nước Trái cây lên men và Trà hoa Kombucha mới lạ và đầy thú vị - dành cho những nguời luôn khao khát tìm kiếm sự đổi mới, sáng tạo,giàu Vitamin C và yêu chiều hệ tiêu hoá.
 																Đặc biệt hơn là các dòng sản phẩm của FJW hoàn toàn không chất bảo quản.
 																&lt;dl&gt;
@@ -165,10 +253,10 @@
 																	&lt;/dd&gt;
 																&lt;/dl&gt;</value>
   </data>
-  <data name="section3_slogan" xml:space="preserve">
+  <data name="product_slogan" xml:space="preserve">
     <value>Nước trái cây lên men và Trà hoa lên men Kombucha</value>
   </data>
-  <data name="section3_title" xml:space="preserve">
+  <data name="product_title" xml:space="preserve">
     <value>Sản phẩm</value>
   </data>
   <data name="slogan" xml:space="preserve">
