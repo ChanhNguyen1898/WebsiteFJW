@@ -159,8 +159,11 @@ Squeeze the apples and place them in large bins. This process will create a drin
   <data name="events_btn_detail" xml:space="preserve">
     <value>Details</value>
   </data>
+  <data name="events_des" xml:space="preserve">
+    <value>Information is updating.......................</value>
+  </data>
   <data name="events_title" xml:space="preserve">
-    <value>Events</value>
+    <value>Sustainable Development Goals – SDG</value>
   </data>
   <data name="event_date1" xml:space="preserve">
     <value>Mar. 21</value>
