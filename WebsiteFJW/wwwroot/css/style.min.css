@@ -2300,7 +2300,7 @@ figure.alignleft,figure.alignright {
 }
 
 .menu_header_nav>li ul,.menu_main_nav>li ul {
-  width: 16.3636em;
+  width: 19.3636em;
   padding: 2.3em 0;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -2325,7 +2325,7 @@ figure.alignleft,figure.alignright {
 }
 
 .menu_header_nav>li ul>li>a,.menu_main_nav>li ul>li>a {
-  padding: .6em 2em
+  padding: .6em 1em
 }
 
 .menu_header_nav>li>ul,.menu_main_nav>li>ul {
@@ -2592,7 +2592,7 @@ body.mobile_layout.menu_style_side {
 }
 
 .menu_mobile .menu_mobile_nav_area ul ul {
-  margin-left: 1.5em;
+  margin-left: 0.5em;
   display: none
 }
 

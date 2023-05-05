@@ -121,6 +121,54 @@
     <value>Home</value>
   </data>
   <data name="menu2" xml:space="preserve">
-    <value>Our Range</value>
+    <value>Produtcs</value>
+  </data>
+  <data name="menu3" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="menu3_1" xml:space="preserve">
+    <value>Oriented development</value>
+  </data>
+  <data name="menu3_2" xml:space="preserve">
+    <value>Development Goals</value>
+  </data>
+  <data name="menu3_3" xml:space="preserve">
+    <value>Share from a partner</value>
+  </data>
+  <data name="menu4" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="menu4_1" xml:space="preserve">
+    <value>Cart</value>
+  </data>
+  <data name="menu4_2" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="menu4_3" xml:space="preserve">
+    <value>My account</value>
+  </data>
+  <data name="menu5" xml:space="preserve">
+    <value>Product price list</value>
+  </data>
+  <data name="menu5_1" xml:space="preserve">
+    <value>Distribution agent</value>
+  </data>
+  <data name="menu5_2" xml:space="preserve">
+    <value>Business Partners</value>
+  </data>
+  <data name="menu5_3" xml:space="preserve">
+    <value>Franchise store</value>
+  </data>
+  <data name="menu6" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="menu6_1" xml:space="preserve">
+    <value>CONTACT US</value>
+  </data>
+  <data name="menu6_2" xml:space="preserve">
+    <value>Message from FJW</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Search</value>
   </data>
 </root>
