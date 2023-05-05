@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="about_button" xml:space="preserve">
-    <value>See More</value>
+    <value>See more</value>
   </data>
   <data name="about_content" xml:space="preserve">
     <value>&lt;dl&gt;
@@ -132,13 +132,13 @@ Squeeze the apples and place them in large bins. This process will create a drin
 &lt;/dl&gt;</value>
   </data>
   <data name="about_slogan" xml:space="preserve">
-    <value>And what's different about FJW's featured products?</value>
+    <value>What's different from FJW's featured products?</value>
   </data>
   <data name="about_title" xml:space="preserve">
-    <value>Origin of fermented juice</value>
+    <value>Fermented juice historical</value>
   </data>
   <data name="contact_btn" xml:space="preserve">
-    <value>Please contact me for better advice</value>
+    <value>Please contact us for better advice</value>
   </data>
   <data name="contact_des" xml:space="preserve">
     <value>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Address:&lt;/strong&gt;&lt;/em&gt;&lt;br&gt; S5-02.17 The Sun Avenue, 28 Mai Chi Tho, An Phu, Thu Duc City, HCMC&lt;/p&gt;
@@ -148,19 +148,19 @@ Squeeze the apples and place them in large bins. This process will create a drin
 &lt;/p&gt;</value>
   </data>
   <data name="contact_subtitle" xml:space="preserve">
-    <value>Each product line is fermented with the heart</value>
+    <value>Products of FJW are fermented with heart</value>
   </data>
   <data name="contact_title" xml:space="preserve">
     <value>Contact</value>
   </data>
   <data name="events_btn_all" xml:space="preserve">
-    <value>All Events</value>
+    <value>See more</value>
   </data>
   <data name="events_btn_detail" xml:space="preserve">
     <value>Details</value>
   </data>
   <data name="events_title" xml:space="preserve">
-    <value>Events</value>
+    <value>Sustainable Development Goals – SDG</value>
   </data>
   <data name="event_date1" xml:space="preserve">
     <value>Mar. 21</value>
@@ -169,19 +169,19 @@ Squeeze the apples and place them in large bins. This process will create a drin
     <value>Feb. 12</value>
   </data>
   <data name="event_featured_add" xml:space="preserve">
-    <value>No. 1, Pham Ngoc Thach, District 1, HCMC</value>
+    <value>Cherish and preserve the value of Vietnamese agricultural products</value>
   </data>
   <data name="event_featured_datetime" xml:space="preserve">
-    <value>Saturday, May 7, 2016</value>
+    <value>Increasing stable income for Vietnamese farmers</value>
   </data>
   <data name="event_featured_des" xml:space="preserve">
-    <value>&lt;span&gt;Youth Cultural House&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;b&gt;6-9 PM&lt;/b&gt;&lt;/span&gt;</value>
+    <value>Local agricultural products are the top priority in raw material procurement</value>
   </data>
   <data name="event_featured_subtitle" xml:space="preserve">
-    <value>VIETNAM BREAKFAST</value>
+    <value>FOR SUSTAINABLE DEVELOPMENT</value>
   </data>
   <data name="event_featured_title" xml:space="preserve">
-    <value>Bread Festival</value>
+    <value>We create healthy fermented juices and fermented tea flowers with free alcohol, free chemical</value>
   </data>
   <data name="event_time1" xml:space="preserve">
     <value>10:00 AM</value>
@@ -196,70 +196,70 @@ Squeeze the apples and place them in large bins. This process will create a drin
     <value>Wine &amp; Cheese Lunch</value>
   </data>
   <data name="info_des1" xml:space="preserve">
-    <value>Information is updating.......................</value>
+    <value>GMP - GOOD MANUFACTURING PRACTICE is a system of good manufacturing practice standards to control factors that can affect the process of product quality formation, to ensure the quality products. The criteria of GMP require manufacturers, processors and packers of drugs, medical devices, certain foods  to take proactive steps to ensure that their products are safe.</value>
   </data>
   <data name="info_des2" xml:space="preserve">
-    <value>Information is updating.......................</value>
+    <value>HACCP: HAZARD ANALYSIS AND CRITICAL CONTROL POINTS (HACCP) Is a systematic preventive approach to food safety from biological, chemical, physical hazards and more recently radiological hazards in production processes that can cause the finished product to be unsafe and designs measures to reduce these risks to a safe level</value>
   </data>
   <data name="info_des3" xml:space="preserve">
-    <value>Information is updating.......................</value>
+    <value>Product announcement means that a manufacturing enterprise or organization or individual declares to the competent authority about the quality of imported or domestically produced products that are allowed to be circulated nationwide or not. This is a mandatory order to be announced before importing or circulating goods across the country.</value>
   </data>
   <data name="info_title1" xml:space="preserve">
-    <value>Certifications</value>
+    <value>GMP Certificated</value>
   </data>
   <data name="info_title2" xml:space="preserve">
-    <value>Store FJW</value>
+    <value>HACCP Certificated</value>
   </data>
   <data name="info_title3" xml:space="preserve">
-    <value>Share the business</value>
+    <value>Products License</value>
   </data>
   <data name="npp_bac" xml:space="preserve">
-    <value>Northern Distributor</value>
+    <value>Outlets in Hanoi</value>
   </data>
   <data name="npp_hcm" xml:space="preserve">
-    <value>Ho Chi Minh Distributor</value>
+    <value>Outlets in Ho Chi Minh City</value>
   </data>
   <data name="npp_nam" xml:space="preserve">
-    <value>Southern Distributor</value>
+    <value>Outlets in Mekong Deta Vietnam</value>
   </data>
   <data name="npp_trung" xml:space="preserve">
-    <value>Central Distributor</value>
+    <value>Outlets in Central Vietnam</value>
   </data>
   <data name="orient_button" xml:space="preserve">
-    <value>See Our Oriented development</value>
+    <value>Read more</value>
   </data>
   <data name="orient_content" xml:space="preserve">
-    <value>The collective staff of FJW company is always dedicated to the guideline of creating good fermented products for the digestive system, without colorants, without preservatives.</value>
+    <value>FJW is always dedicated to the guideline of creating good fermented products (juices and tea flowers) for the healthy, free chemical, without preservatives. And Vietnamese agricultural products are the top priority in the selection of raw materials.</value>
   </data>
   <data name="orient_slogan" xml:space="preserve">
-    <value>As the leading company in creating healthy fermented drink line</value>
+    <value>As a leading company in creating healthy alcohol-free fermented drinks</value>
   </data>
   <data name="orient_title" xml:space="preserve">
-    <value>Oriented development</value>
+    <value>Oriented Development</value>
   </data>
   <data name="product_button" xml:space="preserve">
     <value>Product details</value>
   </data>
   <data name="product_content" xml:space="preserve">
-    <value>We are always passionate about producing new and exciting lines of Fermented Fruit Juices and Kombucha Flower Teas - for those who are always looking for innovation, creativity, rich in Vitamin C and love the digestive system. chemical.
-More specifically, FJW's product lines are completely preservative-free.
+    <value>All  of FJW's products (Fermented flowers Tea (Kombucha) and Fermented juices) - for those who are always looking for innovation, creativity, rich in Vitamin C and healthy.
+More specifically, FJW's product categories are completely preservative-free.
 &lt;dl&gt;
-&lt;dt&gt;Currently, FJW has 2 main lines of non-alcoholic fermented water:&lt;/dt&gt;
+&lt;dt&gt;Currently, FJW has 2 main categories:&lt;/dt&gt;
 &lt;dd&gt;
-- Non-alcoholic fermented juice COC GREEN: Light sweetness, coolness
-- Passion fruit non-alcoholic fermented juice: Sour, refreshing taste
-- Kombucha fermented flower tea: Rose, Chamomile, Jasmine, Red Artichoke
+- Non-alcoholic fermented ambarella juice: Light sweetness, coolness
+- Non-alcoholic fermented Passion juice: Sour, refreshing taste
+- Kombucha fermented flowers tea: Rose, Daisy, Jasmine
 
 &lt;/dd&gt;
 &lt;/dl&gt;</value>
   </data>
   <data name="product_slogan" xml:space="preserve">
-    <value>Kombucha Fermented Fruit Juice and Fermented Flower Tea</value>
+    <value>Fermented Juice and Fermented Flowers Tea</value>
   </data>
   <data name="product_title" xml:space="preserve">
-    <value>Product</value>
+    <value>Products</value>
   </data>
   <data name="slogan" xml:space="preserve">
-    <value>EVERY BOTTLE OF YELLOW JUICE AND KOMBUCHA TEA IS A CREATIVE SOUL</value>
+    <value>EVERY BOTTLE OF FERMENTED JUICE AND KOMBUCHA FLOWER TEA IS A CREATIVE SOUL</value>
   </data>
 </root>
