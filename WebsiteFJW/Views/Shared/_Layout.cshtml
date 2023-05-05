@@ -48,64 +48,52 @@
 										<a href="WineList"><span>@Localizer["menu2"]</span></a>
 									</li>
 									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "blogarchive" ? " current-menu-parent" : "")">
-										<a href="BlogArchive"><span>The Journal</span></a>
+										<a href="BlogArchive"><span>@Localizer["menu3"]</span></a>
 										<ul class="sub-menu">
 											<li class="menu-item@(ViewBag.CCurrent == "portfolio" ? " current-menu-item" : "")">
-												<a href="Portfolio"><span>Portfolio</span></a>
-												@*<ul class="sub-menu">
-													<li class="menu-item@(ViewBag.CCurrent == "portfolio2c" ? " current-menu-item" : "")">
-														<a href="Portfolio2c"><span>2 columns</span></a>
-													</li>
-													<li class="menu-item@(ViewBag.CCurrent == "portfolio3c" ? " current-menu-item" : "")">
-														<a href="Portfolio3c"><span>3 columns</span></a>
-													</li>
-													<li class="menu-item@(ViewBag.CCurrent == "portfolio4c" ? " current-menu-item" : "")">
-														<a href="Portfolio4c"><span>4 columns</span></a>
-													</li>
-												</ul>*@
+												<a href="Portfolio"><span>@Localizer["menu3_1"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "category" ? " current-menu-item" : "")">
-												<a href="BlogArchive"><span>Post Formats</span></a>
+												<a href="BlogArchive"><span>@Localizer["menu3_2"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "singlepost" ? " current-menu-item" : "")">
-												<a href="SinglePost"><span>Post with comments</span></a>
+												<a href="SinglePost"><span>@Localizer["menu3_3"]</span></a>
 											</li>
 										</ul>
 									</li>
 									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "buywines" ? " current-menu-parent" : "")">
-										<a href="BuyWines"><span>Buy Wines</span></a>
+										<a href="BuyWines"><span>@Localizer["menu4"]</span></a>
 										<ul class="sub-menu">
 											<li class="menu-item@(ViewBag.CCurrent == "cart" ? " current-menu-item" : "")">
-												<a href="Cart"><span>Cart</span></a>
+												<a href="Cart"><span>@Localizer["menu4_1"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "checkout" ? " current-menu-item" : "")">
-												<a href="Checkout"><span>Checkout</span></a>
+												<a href="Checkout"><span>@Localizer["menu4_2"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "myaccount" ? " current-menu-item" : "")">
-												<a href="MyAccount"><span>My Account</span></a>
+												<a href="MyAccount"><span>@Localizer["menu4_3"]</span></a>
 											</li>
 										</ul>
 									</li>
 									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "features" ? " current-menu-parent" : "")">
-										<a><span>Features</span></a>
+										<a><span>@Localizer["menu5"]</span></a>
 										<ul class="sub-menu">
 											<li class="menu-item@(ViewBag.CCurrent == "typography" ? " current-menu-item" : "")">
-												<a href="Typography"><span>Typography</span></a>
+												<a href="Typography"><span>@Localizer["menu5_1"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "shortcodes" ? " current-menu-item" : "")">
-												<a href="Shortcodes"><span>Shortcodes</span></a>
+												<a href="Shortcodes"><span>@Localizer["menu5_2"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "events" ? " current-menu-item" : "")">
-												<a href="Events"><span>Events</span></a>
+												<a href="Events"><span>@Localizer["menu5_3"]</span></a>
 											</li>
-											@*<li class="menu-item"><a href="non-existing-page.html"><span>Page 404</span></a></li>*@
 										</ul>
 									</li>
 									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "contacts" ? " current-menu-parent" : "")">
-										<a href="Contacts"><span>Contacts</span></a>
+										<a href="Contacts"><span>@Localizer["menu6"]</span></a>
 										<ul class="sub-menu">
-											<li class="menu-item@(ViewBag.CCurrent == "contacts" ? " current-menu-item" : "")"><a href="Contacts"><span>Contact Us</span></a></li>
-											<li class="menu-item@(ViewBag.CCurrent == "aboutus" ? " current-menu-item" : "")"><a href="AboutUs"><span>About Us</span></a></li>
+											<li class="menu-item@(ViewBag.CCurrent == "contacts" ? " current-menu-item" : "")"><a href="Contacts"><span>@Localizer["menu6_1"]</span></a></li>
+											<li class="menu-item@(ViewBag.CCurrent == "aboutus" ? " current-menu-item" : "")"><a href="AboutUs"><span>@Localizer["menu6_2"]</span></a></li>
 										</ul>
 									</li>
 								</ul>
