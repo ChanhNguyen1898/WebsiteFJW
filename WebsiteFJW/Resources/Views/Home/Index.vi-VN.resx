@@ -107,6 +107,9 @@
   <data name="events_title" xml:space="preserve">
     <value>Mục tiêu Phát triển bền vững</value>
   </data>
+   <data name="events_des" xml:space="preserve">
+    <value>Chúng tôi tạo ra sản phẩm nước lên men không cồn có lợi cho sức khỏe, 100% không chất bảo quản</value>
+  </data>
   <data name="event_date1" xml:space="preserve">
     <value>Mar. 21</value>
   </data>
@@ -126,7 +129,7 @@
     <value>VÌ SỰ PHÁT TRIỂN BỀN VỮNG</value>
   </data>
   <data name="event_featured_title" xml:space="preserve">
-    <value>Chúng tôi tạo ra sản phẩm nước lên men không cồn có lợi cho sức khỏe, 100% không chất bảo quản</value>
+    <value></value>
   </data>
   <data name="event_time1" xml:space="preserve">
     <value>10:00 AM</value>

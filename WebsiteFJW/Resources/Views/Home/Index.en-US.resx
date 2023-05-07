@@ -162,6 +162,9 @@ Squeeze the apples and place them in large bins. This process will create a drin
   <data name="events_title" xml:space="preserve">
     <value>Sustainable Development Goals – SDG</value>
   </data>
+   <data name="events_des" xml:space="preserve">
+    <value>We create healthy fermented juices and fermented tea flowers with free alcohol, free chemical</value>
+  </data>
   <data name="event_date1" xml:space="preserve">
     <value>Mar. 21</value>
   </data>
@@ -181,7 +184,7 @@ Squeeze the apples and place them in large bins. This process will create a drin
     <value>FOR SUSTAINABLE DEVELOPMENT</value>
   </data>
   <data name="event_featured_title" xml:space="preserve">
-    <value>We create healthy fermented juices and fermented tea flowers with free alcohol, free chemical</value>
+    <value></value>
   </data>
   <data name="event_time1" xml:space="preserve">
     <value>10:00 AM</value>

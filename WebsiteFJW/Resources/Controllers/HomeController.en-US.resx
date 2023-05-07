@@ -121,7 +121,7 @@
     <value>Home</value>
   </data>
   <data name="menu2" xml:space="preserve">
-    <value>Produtcs</value>
+    <value>Products</value>
   </data>
   <data name="menu3" xml:space="preserve">
     <value>About us</value>
@@ -136,28 +136,28 @@
     <value>Share from a partner</value>
   </data>
   <data name="menu4" xml:space="preserve">
-    <value>Order</value>
+    <value>Order Processing</value>
   </data>
   <data name="menu4_1" xml:space="preserve">
     <value>Cart</value>
   </data>
   <data name="menu4_2" xml:space="preserve">
-    <value>Buy</value>
+    <value>Check out</value>
   </data>
   <data name="menu4_3" xml:space="preserve">
     <value>My account</value>
   </data>
   <data name="menu5" xml:space="preserve">
-    <value>Product price list</value>
+    <value>Product pricing list</value>
   </data>
   <data name="menu5_1" xml:space="preserve">
-    <value>Distribution agent</value>
+    <value>Distribution Agents</value>
   </data>
   <data name="menu5_2" xml:space="preserve">
     <value>Business Partners</value>
   </data>
   <data name="menu5_3" xml:space="preserve">
-    <value>Franchise store</value>
+    <value>Franchise Stores</value>
   </data>
   <data name="menu6" xml:space="preserve">
     <value>Contact</value>
