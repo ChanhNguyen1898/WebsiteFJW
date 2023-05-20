@@ -1,13 +1,17 @@
-﻿@{
-    Layout = null;
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer ViewLocalizer
+@{
+	Layout = null;
 }
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website FJW</title>
-    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Website FJW</title>
+	<link rel="icon" href="~/favicon.ico" type="image/x-icon">
 	<link rel='stylesheet' id='trx_addons-icons-css' href='~/js/vendor/plugins/trx_addons/css/font-icons/css/trx_addons_icons-embedded.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='trx_addons-css' href='~/js/vendor/plugins/trx_addons/css/trx_addons.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='woocommerce-layout-css' href='~/js/vendor/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
@@ -24,13 +28,17 @@
 	<link rel='stylesheet' id='vc_hotspot_cq_style-css' href='~/js/vendor/plugins/vc-extensions-bundle/hotspot/css/style.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='tooltipster-css' href='~/js/vendor/plugins/vc-extensions-bundle/profilecard/css/tooltipster.css' type='text/css' media='all' />
 </head>
-<body class="home page page-template-default body_tag body_style_wide scheme_default blog_mode_home  is_stream blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-1 header_position_over header_title_off menu_style_side no_layout vc_responsive">
+<body class="home page page-template-default body_tag body_style_wide scheme_default blog_mode_home is_stream blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-1 header_position_over header_title_off menu_style_side no_layout vc_responsive">
 	<div class="body_wrap">
 		<div class="page_wrap">
 			<header class="top_panel top_panel_style_1 without_bg_image scheme_default">
 				<a class="menu_mobile_button"></a>
 				<div class="top_panel_fixed_wrap"></div>
 				<div class="top_panel_navi scheme_dark">
+					<div class="icons-multilang">
+						<a href="?culture=vi-VN"><img src="~/images/icons/ic-vn.png" /></a>
+						<a href="?culture=en-US"><img src="~/images/icons/ic-en.png" /></a>
+					</div>
 					<div class="menu_main_wrap clearfix">
 						<div class="wrap">
 							<a class="logo" href="/"><img src="~/images/logo.png" class="logo_main" alt="" /></a>
@@ -53,7 +61,7 @@
 									<div class="wpb_column vc_column_container column-3_12">
 										<div class="vc_column-inner ">
 											<div class="wpb_wrapper">
-												<div style="width:" class="cqtooltip-wrapper hide_on_mobile" data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="light" data-trigger="hover" data-maxwidth="210" data-marginoffset="" data-isdisplayall="off" data-displayednum="1">
+												<div class="cqtooltip-wrapper hide_on_mobile" data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="light" data-trigger="hover" data-maxwidth="210" data-marginoffset="" data-isdisplayall="off" data-displayednum="1">
 													<img src="~/images/spacer.png" alt="" />
 													<div class="cq-hotspots">
 														<div class="hotspot-item pulse-white " style="top:60%;left:20%;" data-top="60%" data-left="20%">
@@ -66,9 +74,9 @@
 																<div class=&quot;wpb_text_column wpb_content_element  scheme_dark&quot;>
 																	<div class=&quot;wpb_wrapper&quot;>
 																		<p style=&quot;text-align: center;&quot;>
-																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Cabernet Sauvignon</a></span><br />
-																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>2013</span><br />
-																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quotProduct;>See Details</a></span>
+																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Nước Chanh Dây lên men</a></span><br />
+																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>Dòng sản phẩm FJ</span><br />
+																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quotProduct;>Xem chi tiết</a></span>
 																		</p>
 																	</div>
 																</div>
@@ -84,9 +92,9 @@
 																<div class=&quot;wpb_text_column wpb_content_element  scheme_dark&quot;>
 																	<div class=&quot;wpb_wrapper&quot;>
 																		<p style=&quot;text-align: center;&quot;>
-																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Classic Shardonnay</a></span><br />
-																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>2014</span><br />
-																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>See Details</a></span>
+																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Nuớc Cóc xanh lên men</a></span><br />
+																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>Dòng sản phầm FJ</span><br />
+																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>Xem chi tiết</a></span>
 																		</p>
 																	</div>
 																</div>
@@ -109,7 +117,7 @@
 												<div class="vc_empty_space  height_medium" style="height: 0px"></div>
 												<div class="wpb_text_column wpb_content_element  vc_custom_1469087355036">
 													<div class="wpb_wrapper">
-														<p style="text-align: center; font-size: 0.8421em; letter-spacing: 2px; line-height: 1.75em;"><strong><span style="color: #ffffff;">WINE HOUSE IS COMMITED TO PRODUCING ESTATE GROWN WINES OF THE HIGHEST CALIBER AND DISTINCTION.</span></strong></p>
+														<p style="text-align: center; font-size: 0.8421em; letter-spacing: 2px; line-height: 1.75em;"><strong><span style="color: #ffffff;">@ViewLocalizer["slogan"]</span></strong></p>
 													</div>
 												</div>
 												<div class="vc_empty_space  height_huge" style="height: 0px"></div>
@@ -132,9 +140,9 @@
 																<div class=&quot;wpb_text_column wpb_content_element  scheme_dark&quot;>
 																	<div class=&quot;wpb_wrapper&quot;>
 																		<p style=&quot;text-align: center;&quot;>
-																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Johann Shiraz Cabernet</a></span><br />
-																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>2012</span><br />
-																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>See Details</a></span>
+																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;></a>Kombucha Hoa Hồng</span><br />
+																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>Dòng sản phẩm FT</span><br />
+																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>Xem chi tiết</a></span>
 																		</p>
 																	</div>
 																</div>
@@ -150,9 +158,9 @@
 																<div class=&quot;wpb_text_column wpb_content_element  scheme_dark&quot;>
 																	<div class=&quot;wpb_wrapper&quot;>
 																		<p style=&quot;text-align: center;&quot;>
-																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Classic Shardonnay</a></span><br />
-																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>2014</span><br />
-																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>See Details</a></span>
+																			<span class=&quot;trx_addons_dark&quot;><a href=&quot;Product&quot;>Kombucha Hoa Lài (Nhài)</a></span><br />
+																			<span class=&quot;trx_addons_accent trx_addons_tiny_text&quot;>Dòng sản phẩm FT</span><br />
+																			<span class=&quot;trx_addons_dark trx_addons_tiny_text&quot;><a href=&quot;Product&quot;>Xem chi tiết</a></span>
 																		</p>
 																	</div>
 																</div>
@@ -174,20 +182,22 @@
 													<div class="sc_promo_text trx_addons_stretch_height" style="width: 50%;float: right;">
 														<div class="sc_promo_text_inner sc_align_center">
 															<div class="sc_promo_icon" data-icon="icon-grape-3"><span class="icon-grape-3"></span></div>
-															<h2 class="sc_item_title sc_promo_title">Favourite Place</h2>
-															<h5 class="sc_item_subtitle sc_promo_subtitle">Lovely Relaxed Atmosphere of the Winery Gives You a Positive.</h5>
-															<div class="sc_item_descr sc_promo_descr">
-																Cras sodales luctus arcu, ac placerat nunc sagittis a. In at turpis ac nibh luctus sagittis in ut est. Proin sed mi vitae velit convallis gravida imperdiet eu mauris. Maecenas vehicula quam vel urna pulvinar, quis faucibus quam pellentesque.
-																Sed vitae pellentesque velit. Etiam nec ornare tortor.
-															</div>
+															<h2 class="sc_item_title sc_promo_title">@ViewLocalizer["orient_title"]</h2>
+															<h5 class="sc_item_subtitle sc_promo_subtitle">@ViewLocalizer["orient_slogan"]</h5>
+															<div class="sc_item_descr sc_promo_descr">@ViewLocalizer["orient_content"]</div>
 															<div class="sc_promo_content sc_item_content">
 																<div class="wpb_single_image wpb_content_element vc_align_center">
 																	<figure class="wpb_wrapper vc_figure">
-																		<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="297" height="105" src="~/images/sinature.png" class="vc_single_image-img attachment-full" alt="sinature" /></div>
+																		<div class="vc_single_image-wrapper vc_box_border_grey"><img width="297" height="105" src="~/images/sinature.png" class="vc_single_image-img attachment-full" alt="sinature" /></div>
 																	</figure>
 																</div>
 															</div>
-															<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="Contacts" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Our Plantation</span></span> </a>																</div>
+															<div class="sc_item_button sc_promo_button sc_button_wrap">
+																<a href="Contacts" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text">
+																		<span class="sc_button_title">@ViewLocalizer["orient_button"]</span>
+																	</span>
+																</a>
+															</div>
 														</div>
 													</div>
 												</div>
@@ -205,13 +215,14 @@
 													<div class="sc_promo_text trx_addons_stretch_height" style="width: 50%;float: left;">
 														<div class="sc_promo_text_inner sc_align_center">
 															<div class="sc_promo_icon" data-icon="icon-grape-leafs"><span class="icon-grape-leafs"></span></div>
-															<h2 class="sc_item_title sc_promo_title">Wine Essentials</h2>
-															<h5 class="sc_item_subtitle sc_promo_subtitle">We make wine with a thought of our customers, therefore the team...</h5>
-															<div class="sc_item_descr sc_promo_descr">
-																Pressing is the act of applying pressure to grapes or pomace in order to separate juice or wine from grapes and grape skins. Pressing is not always a necessary act in winemaking; if grapes are crushed there is a considerable amount of juice
-																immediately liberated (called free-run juice) that can be used for vinification. Typically this free-run juice is of a higher quality than the press juice.
+															<h2 class="sc_item_title sc_promo_title">@ViewLocalizer["about_title"]</h2>
+															<h5 class="sc_item_subtitle sc_promo_subtitle">@ViewLocalizer["about_slogan"]</h5>
+															<div class="sc_item_descr sc_promo_descr">@ViewLocalizer["about_content"]</div>
+															<div class="sc_item_button sc_promo_button sc_button_wrap">
+																<a href="AboutUs" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span>
+																	<span class="sc_button_text"><span class="sc_button_title">@ViewLocalizer["about_button"]</span></span>
+																</a>
 															</div>
-															<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="AboutUs" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Our Philosophy</span></span> </a>																</div>
 														</div>
 													</div>
 												</div>
@@ -231,7 +242,7 @@
 																	<div class="post_item post_layout_thumbs">
 																		<div class="post_featured hover_shop">
 																			<a href="Product">
-																				<img width="360" height="480" src="~/images/1837_CabernetMerlot_43x2-360x480.png" alt="1837_CabernetMerlot_43x2" title="1837_CabernetMerlot_43x2" />
+																				<img width="360" height="480" src="~/images/kombucha-hoalai-360x480.jpg" alt="1837_CabernetMerlot_43x2" title="1837_CabernetMerlot_43x2" />
 																			</a>
 																			<div class="mask"></div>
 																			<div class="icons">
@@ -241,14 +252,14 @@
 																		</div>
 																		<div class="post_data">
 																			<div class="post_header entry-header">
-																				<div class="post_tags product_tags"><a href="Product" rel="tag">2011</a></div>
-																				<h3><a href="Product">1837. Cabernet Merlot</a></h3>
+																				<div class="post_tags product_tags"><a href="Product" rel="tag">FT</a></div>
+																				<h3><a href="Product">Kumbucha Hoa Lài (Nhài)</a></h3>
 																				<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%"><strong class="rating">5</strong> out of 5</span></div>
 																			</div>
 																			<span class="price">
 																				<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>300<span class="decimals">50</span></span>
 																			</span>
-																			<a rel="nofollow" href="#" data-quantity="1" data-product_id="403" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Buy now</a>
+																			<a rel="nofollow" href="#" data-quantity="1" data-product_id="403" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Mua ngay</a>
 																		</div>
 																	</div>
 																</li>
@@ -256,7 +267,7 @@
 																	<div class="post_item post_layout_thumbs">
 																		<div class="post_featured hover_shop">
 																			<a href="Product">
-																				<img width="360" height="480" src="~/images/FineWines_ReevesPoint_Chardonnay_43x2-360x480.png" alt="FineWines_ReevesPoint_Chardonnay_43x2" title="FineWines_ReevesPoint_Chardonnay_43x2" />
+																				<img width="360" height="480" src="~/images/chanhday-360x480.jpg" alt="FineWines_ReevesPoint_Chardonnay_43x2" title="FineWines_ReevesPoint_Chardonnay_43x2" />
 																			</a>
 																			<div class="mask"></div>
 																			<div class="icons">
@@ -266,13 +277,13 @@
 																		</div>
 																		<div class="post_data">
 																			<div class="post_header entry-header">
-																				<div class="post_tags product_tags"><a href="Product" rel="tag">2012</a></div>
-																				<h3><a href="Product">Reeves Point</a></h3>
+																				<div class="post_tags product_tags"><a href="Product" rel="tag">FJ</a></div>
+																				<h3><a href="Product">Nuớc Chanh dây lên men</a></h3>
 																			</div>
 																			<span class="price">
-																				<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>247<span class="decimals">00</span></span>
+																				<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>37,000<span class="decimals">00</span></span>
 																			</span>
-																			<a rel="nofollow" href="#" data-quantity="1" data-product_id="404" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Buy now</a>
+																			<a rel="nofollow" href="#" data-quantity="1" data-product_id="404" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Mua ngay</a>
 																		</div>
 																	</div>
 																</li>
@@ -280,24 +291,24 @@
 																	<div class="post_item post_layout_thumbs">
 																		<div class="post_featured hover_shop">
 																			<a href="Product">
-																				<img width="360" height="480" src="~/images/ASoqsTZh-FineWines_Steingarten_Riesling_43x2-360x480.png" alt="ASoqsTZh-FineWines_Steingarten_Riesling_43x2" title="ASoqsTZh-FineWines_Steingarten_Riesling_43x2" />
+																				<img width="360" height="480" src="~/images/coc-360x480.jpg" alt="ASoqsTZh-FineWines_Steingarten_Riesling_43x2" title="ASoqsTZh-FineWines_Steingarten_Riesling_43x2" />
 																			</a>
 																			<div class="mask"></div>
 																			<div class="icons">
 																				<a rel="nofollow" href="#" aria-hidden="true" data-quantity="1" data-product_id="405" data-product_sku="" class="shop_cart icon-shopping-cart button add_to_cart_button product_type_simple ajax_add_to_cart"></a>
 																				<a href="Product" aria-hidden="true" class="shop_link icon-link"></a>
 																			</div>
-																			<div class="product_awards"><span>Award WINNER</span></div>
+																			<div class="product_awards"><span>YÊU THÍCH NHẤT</span></div>
 																		</div>
 																		<div class="post_data">
 																			<div class="post_header entry-header">
-																				<div class="post_tags product_tags"><a href="Product" rel="tag">2013</a></div>
-																				<h3><a href="Product">Steingarten</a></h3>
+																				<div class="post_tags product_tags"><a href="Product" rel="tag">FJ</a></div>
+																				<h3><a href="Product">Nước Cóc xanh lên men</a></h3>
 																			</div>
 																			<span class="price">
-																				<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>45<span class="decimals">95</span></span>
+																				<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>37,000<span class="decimals">00</span></span>
 																			</span>
-																			<a rel="nofollow" href="#" data-quantity="1" data-product_id="405" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Buy now</a>
+																			<a rel="nofollow" href="#" data-quantity="1" data-product_id="405" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Mua ngay</a>
 																		</div>
 																	</div>
 																</li>
@@ -305,25 +316,25 @@
 																	<div class="post_item post_layout_thumbs">
 																		<div class="post_featured hover_shop">
 																			<a href="Product">
-																				<img width="360" height="480" src="~/images/kaO0w6Nl-FineWines_CentenaryHill_Shiraz_43x2-360x480.png" alt="kaO0w6Nl-FineWines_CentenaryHill_Shiraz_43x2" title="kaO0w6Nl-FineWines_CentenaryHill_Shiraz_43x2" />
+																				<img width="360" height="480" src="~/images/kombucha-hoahong-360x480.jpg" alt="kaO0w6Nl-FineWines_CentenaryHill_Shiraz_43x2" title="kaO0w6Nl-FineWines_CentenaryHill_Shiraz_43x2" />
 																			</a>
 																			<div class="mask"></div>
 																			<div class="icons">
 																				<a rel="nofollow" href="#" aria-hidden="true" data-quantity="1" data-product_id="406" data-product_sku="" class="shop_cart icon-shopping-cart button add_to_cart_button product_type_simple ajax_add_to_cart"></a>
 																				<a href="Product" aria-hidden="true" class="shop_link icon-link"></a>
 																			</div>
-																			<div class="product_awards"><span>Award WINNER</span></div>
+																			<div class="product_awards"><span>XU HUỚNG</span></div>
 																		</div>
 																		<div class="post_data">
 																			<div class="post_header entry-header">
-																				<div class="post_tags product_tags"><a href="Product" rel="tag">2014</a></div>
-																				<h3><a href="Product">Centenary Hill Shiraz</a></h3>
+																				<div class="post_tags product_tags"><a href="Product" rel="tag">FT</a></div>
+																				<h3><a href="Product">Kombucha Hoa Hồng</a></h3>
 																				<div class="star-rating" title="Rated 5 out of 5"><span style="width:100%"><strong class="rating">5</strong> out of 5</span></div>
 																			</div>
 																			<span class="price">
-																				<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>595<span class="decimals">00</span></span>
+																				<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>37,000<span class="decimals">00</span></span>
 																			</span>
-																			<a rel="nofollow" href="#" data-quantity="1" data-product_id="406" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Buy now</a>
+																			<a rel="nofollow" href="#" data-quantity="1" data-product_id="406" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Mua ngay</a>
 																		</div>
 																	</div>
 																</li>
@@ -341,13 +352,13 @@
 													<div class="sc_promo_text" style="width: 100%;">
 														<div class="sc_promo_text_inner sc_align_center">
 															<div class="sc_promo_icon" data-icon="icon-bottles"><span class="icon-bottles"></span></div>
-															<h2 class="sc_item_title sc_promo_title">Our Wines</h2>
-															<h5 class="sc_item_subtitle sc_promo_subtitle">We make wine with a thought of our customers, therefore the team...</h5>
-															<div class="sc_item_descr sc_promo_descr">
-																Pressing is the act of applying pressure to grapes or pomace in order to separate juice or wine from grapes and grape skins. Pressing is not always a necessary act in winemaking; if grapes are crushed there is a considerable amount of juice immediately liberated (called free-run juice) that can be used for vinification. Typically this free-run juice is of a higher quality than the press juice.
-															</div>
+															<h2 class="sc_item_title sc_promo_title">@ViewLocalizer["product_title"]</h2>
+															<h5 class="sc_item_subtitle sc_promo_subtitle">@ViewLocalizer["product_slogan"]</h5>
+															<div class="sc_item_descr sc_promo_descr">@ViewLocalizer["product_content"]</div>
 															<div class="sc_item_button sc_promo_button sc_button_wrap">
-																<a href="WineList" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Wine List</span></span> </a>
+																<a href="WineList" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span>
+																	<span class="sc_button_text"><span class="sc_button_title">@ViewLocalizer["product_button"]</span></span>
+																</a>
 															</div>
 														</div>
 													</div>
@@ -360,14 +371,16 @@
 									<div class="wpb_column vc_column_container column-6_12">
 										<div class="vc_column-inner ">
 											<div class="wpb_wrapper">
-												<div id="sc_content_2046722897" class="sc_content sc_content_default sc_padding_large			">
+												<div id="sc_content_2046722897" class="sc_content sc_content_default sc_padding_large">
 													<div class="sc_content_container">
 														<div class="sc_events sc_events_detailed" data-slides-min-width="150">
-															<h2 class="sc_item_title sc_events_title">Events</h2>
-															<div class="sc_events_content sc_item_content">
-																<a href="Event" class="sc_events_item"><span class="sc_events_item_date_wrap"><span class="sc_events_item_date">Mar. 21</span></span><span class="sc_events_item_title_wrap"><span class="sc_events_item_title">Presentation &#8216;Winemaking Is An Art&#8217;</span></span><span class="sc_events_item_time_wrap"><span class="sc_events_item_time">10:00 AM</span></span><span class="sc_events_item_button_wrap"><span class="sc_events_item_button">Details</span></span></a><a href="event.html" class="sc_events_item"><span class="sc_events_item_date_wrap"><span class="sc_events_item_date">Feb. 12</span></span><span class="sc_events_item_title_wrap"><span class="sc_events_item_title">Wine &#038; Cheese Lunch</span></span><span class="sc_events_item_time_wrap"><span class="sc_events_item_time">12:15 AM</span></span><span class="sc_events_item_button_wrap"><span class="sc_events_item_button">Details</span></span></a>
+															<h2 class="sc_item_title sc_events_title">@ViewLocalizer["events_title"]</h2>
+															<div class="sc_events_content sc_item_content">@ViewLocalizer["events_des"]</div>
+															<div class="sc_item_button sc_events_button sc_button_wrap">
+																<a href="Events" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span>
+																	<span class="sc_button_text"><span class="sc_button_title">@ViewLocalizer["events_btn_all"]</span></span>
+																</a>															
 															</div>
-															<div class="sc_item_button sc_events_button sc_button_wrap"><a href="Events" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">All Events</span></span> </a>															</div>
 														</div>
 													</div>
 												</div>
@@ -383,11 +396,11 @@
 															<div class="sc_action_item_mask"></div>
 															<div class="sc_action_item_inner">
 																<div class="sc_action_item_image"><img src="~/images/glass.png" alt="" width="112" height="262"></div>
-																<h6 class="sc_action_item_subtitle"><span>Spring Hill</span></h6>
-																<h2 class="sc_action_item_title"><span>Wine Festival</span></h2>
-																<div class="sc_action_item_date">Saturday, May 7, 2016</div>
-																<div class="sc_action_item_description"><span>Historic Oaklawn Plantation</span><span></span><span><b>6-9 PM</b></span></div>
-																<div class="sc_action_item_info"><span>33335 Denning Lane, Spring Hill * Tel. 800 1235 65 98 * facebook: Spring Hill</span></div>
+																<h6 class="sc_action_item_subtitle"><span>@ViewLocalizer["event_featured_subtitle"]</span></h6>
+																<h2 class="sc_action_item_title"><span>@ViewLocalizer["event_featured_title"]</span></h2>
+																<div class="sc_action_item_date">@ViewLocalizer["event_featured_datetime"]</div>
+																<div class="sc_action_item_description">@ViewLocalizer["event_featured_des"]</div>
+																<div class="sc_action_item_info"><span>@ViewLocalizer["event_featured_add"]</span></div>
 															</div>
 															<a href="Event" class="sc_action_item_link sc_action_item_link_over"></a>
 														</div>
@@ -408,22 +421,22 @@
 														<div class="trx_addons_column-1_3">
 															<div class="sc_icons_item sc_icons_item_linked">
 																<div class="sc_icons_image"><img src="~/images/icon-01.png" alt="" width="276" height="276"></div>
-																<h4 class="sc_icons_title"><span>Awards</span></h4>
-																<div class="sc_icons_description"><span>We make wine with a thought of our customers, therefore the team...</span></div>
+																<h4 class="sc_icons_title"><span>@ViewLocalizer["info_title1"]</span></h4>
+																<div class="sc_icons_description"><span>@ViewLocalizer["info_des1"]</span></div>
 																<a href="#" class="sc_icons_link"></a>
 															</div>
 														</div><div class="trx_addons_column-1_3">
 															<div class="sc_icons_item sc_icons_item_linked">
 																<div class="sc_icons_image"><img src="~/images/icon-02.png" alt="" width="276" height="276"></div>
-																<h4 class="sc_icons_title"><span>Our Store</span></h4>
-																<div class="sc_icons_description"><span>Integer egestas ipsum ut mi convallis lacinia pellentesque vitae lectus.</span></div>
+																<h4 class="sc_icons_title"><span>@ViewLocalizer["info_title2"]</span></h4>
+																<div class="sc_icons_description"><span>@ViewLocalizer["info_des2"]</span></div>
 																<a href="#" class="sc_icons_link"></a>
 															</div>
 														</div><div class="trx_addons_column-1_3">
 															<div class="sc_icons_item sc_icons_item_linked">
 																<div class="sc_icons_image"><img src="~/images/icon-03.png" alt="" width="276" height="276"></div>
-																<h4 class="sc_icons_title"><span>Royal Wine Club</span></h4>
-																<div class="sc_icons_description"><span>Etiam laoreet, arcu ut imperdiet facilisis, nunc tellus consequat nis...</span></div>
+																<h4 class="sc_icons_title"><span>@ViewLocalizer["info_title3"]</span></h4>
+																<div class="sc_icons_description"><span>@ViewLocalizer["info_des3"]</span></div>
 																<a href="#" class="sc_icons_link"></a>
 															</div>
 														</div>
@@ -437,9 +450,37 @@
 								<div class="row vc_custom_1466154433105 row-o-full-height row-o-columns-stretch row-o-equal-height">
 									<div class="wpb_column vc_column_container column-4_12">
 										<div class="vc_column-inner ">
-											<div class="wpb_wrapper"></div>
+											<div class="wpb_wrapper">
+												<div class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="shadow" data-trigger="hover" data-maxwidth="320" data-marginoffset="" data-isdisplayall="off" data-displayednum="1">
+													<img src="~/images/spacer.png" alt="" />
+													<div class="cq-hotspots">
+														<div class="hotspot-item pulse-white" style="top:10%;right:5%;" data-top="44%" data-right="25%">
+															<a href="#" class="cq-tooltip tooltipstered" style="background:#e39a31;" data-tooltip="
+															<div class=&quot;wpb_gmaps_widget wpb_content_element&quot;>
+																	<div class=&quot;wpb_wrapper&quot;>
+																	<div class=&quot;wpb_map_wraper&quot;>
+																		<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48140.522977905624!2d-73.68252670432662!3d41.051881157538546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzA1LjgiTiA3M8KwMzgnNDUuMiJX!5e0!3m2!1sru!2sua!4v1466147063806&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen></iframe>		</div>
+																</div>
+															</div>" data-arrowposition=""><i class="fa icon-placeholder"></i></a>
+															<span class="agents">@ViewLocalizer["npp_nam"]</span>
+														</div>
+														<div class="hotspot-item pulse-white" style="top: 52%;left: 29%;">
+															<a href="#" class="cq-tooltip tooltipstered" style="background:#e39a31;" data-tooltip="
+															<div class=&quot;wpb_gmaps_widget wpb_content_element&quot;>
+																	<div class=&quot;wpb_wrapper&quot;>
+																	<div class=&quot;wpb_map_wraper&quot;>
+																		<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48140.522977905624!2d-73.68252670432662!3d41.051881157538546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzA1LjgiTiA3M8KwMzgnNDUuMiJX!5e0!3m2!1sru!2sua!4v1466147063806&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen></iframe>		</div>
+																</div>
+															</div>" data-arrowposition=""><i class="fa icon-placeholder"></i></a>
+															<span class="agents">@ViewLocalizer["npp_hcm"]</span>
+														</div>
+
+													</div>
+												</div>
+											</div>
 										</div>
-									</div><div class="wpb_column vc_column_container column-4_12 vc_col-has-fill">
+									</div>
+									<div class="wpb_column vc_column_container column-4_12 vc_col-has-fill">
 										<div class="vc_column-inner vc_custom_1466756857898">
 											<div class="wpb_wrapper">
 												<a id="sc_anchor_address" class="sc_anchor" title="Our Address" data-icon="" data-url=""></a>
@@ -448,42 +489,52 @@
 													<div class="sc_promo_text sc_float_center" style="width: 100%;">
 														<div class="sc_promo_text_inner sc_align_center">
 															<div class="sc_promo_icon" data-icon="icon-winery"><span class="icon-winery"></span></div>
-															<h2 class="sc_item_title sc_promo_title">Get in touch</h2>
-															<h5 class="sc_item_subtitle sc_promo_subtitle">We make wine with a thought of our customers, therefore the team...</h5>
+															<h2 class="sc_item_title sc_promo_title">@ViewLocalizer["contact_title"]</h2>
+															<h5 class="sc_item_subtitle sc_promo_subtitle">@ViewLocalizer["contact_subtitle"]</h5>
 															<div class="sc_promo_content sc_item_content">
 																<div class="wpb_text_column wpb_content_element ">
-																	<div class="wpb_wrapper">
-																		<p><em><strong>Address:</strong></em><br /> 3867 Robinson Road, Historic Oaklawn Plantation</p>
-																		<p><em><strong>Telephone:</strong></em><br /> +1 939 381 84 11</p>
-																		<p>
-																			<em><strong>E-mail:</strong></em><br /> clifton.carter20@laon.com
-																		</p>
-																	</div>
+																	<div class="wpb_wrapper">@ViewLocalizer["contact_des"]</div>
 																</div>
 															</div>
-															<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="#" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Join to laon wine house</span></span> </a>													</div>
+															<div class="sc_item_button sc_promo_button sc_button_wrap">
+																<a href="#" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span>
+																	<span class="sc_button_text"><span class="sc_button_title">@ViewLocalizer["contact_btn"]</span></span>
+																</a>													
+															</div>
 														</div>
 													</div>
 												</div>
 												<div class="vc_empty_space  height_medium" style="height: 0px"></div>
 											</div>
 										</div>
-									</div><div class="wpb_column vc_column_container column-4_12">
+									</div>
+									<div class="wpb_column vc_column_container column-4_12">
 										<div class="vc_column-inner ">
 											<div class="wpb_wrapper">
 												<div class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="shadow" data-trigger="hover" data-maxwidth="320" data-marginoffset="" data-isdisplayall="off" data-displayednum="1">
 													<img src="~/images/spacer.png" alt="" />
 													<div class="cq-hotspots">
-														<div class="hotspot-item pulse-white " style="top:44%;left:25%;" data-top="44%" data-left="25%">
+														<div class="hotspot-item pulse-white" style="top:10%;right:5%;" data-top="44%" data-right="25%">
 															<a href="#" class="cq-tooltip tooltipstered" style="background:#e39a31;" data-tooltip="
-													<div class=&quot;wpb_gmaps_widget wpb_content_element&quot;>
-															<div class=&quot;wpb_wrapper&quot;>
-															<div class=&quot;wpb_map_wraper&quot;>
-																<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48140.522977905624!2d-73.68252670432662!3d41.051881157538546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzA1LjgiTiA3M8KwMzgnNDUuMiJX!5e0!3m2!1sru!2sua!4v1466147063806&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen></iframe>		</div>
+															<div class=&quot;wpb_gmaps_widget wpb_content_element&quot;>
+																	<div class=&quot;wpb_wrapper&quot;>
+																	<div class=&quot;wpb_map_wraper&quot;>
+																		<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48140.522977905624!2d-73.68252670432662!3d41.051881157538546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzA1LjgiTiA3M8KwMzgnNDUuMiJX!5e0!3m2!1sru!2sua!4v1466147063806&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen></iframe>		</div>
+																</div>
+															</div>" data-arrowposition=""><i class="fa icon-placeholder"></i></a>
+															<span class="agents">@ViewLocalizer["npp_bac"]</span>
 														</div>
-													</div>
-													" data-arrowposition=""><i class="fa icon-placeholder" style="color:#ffffff;"></i></a>
+														<div class="hotspot-item pulse-white" style="top: 51%;left: 14%;">
+															<a href="#" class="cq-tooltip tooltipstered" style="background:#e39a31;" data-tooltip="
+															<div class=&quot;wpb_gmaps_widget wpb_content_element&quot;>
+																	<div class=&quot;wpb_wrapper&quot;>
+																	<div class=&quot;wpb_map_wraper&quot;>
+																		<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48140.522977905624!2d-73.68252670432662!3d41.051881157538546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzA1LjgiTiA3M8KwMzgnNDUuMiJX!5e0!3m2!1sru!2sua!4v1466147063806&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen></iframe>		</div>
+																</div>
+															</div>" data-arrowposition=""><i class="fa icon-placeholder"></i></a>
+															<span class="agents">@ViewLocalizer["npp_trung"]</span>
 														</div>
+														
 													</div>
 												</div>
 											</div>

@@ -317,6 +317,14 @@
         "runtime": {
           "WebsiteFJW.dll": {}
         },
+        "resources": {
+          "en-US/WebsiteFJW.resources.dll": {
+            "locale": "en-US"
+          },
+          "vi-VN/WebsiteFJW.resources.dll": {
+            "locale": "vi-VN"
+          }
+        },
         "compile": {
           "WebsiteFJW.dll": {}
         }

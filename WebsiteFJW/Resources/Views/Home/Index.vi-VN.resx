@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+ 
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about_button" xml:space="preserve">
+    <value>Xem thêm</value>
+  </data>
+  <data name="about_content" xml:space="preserve">
+    <value>&lt;dl&gt;
+																		&lt;dt&gt;NGỒN GỐC NƯỚC TRÁI CÂY VÀ TRÀ HOA LÊN MEN&lt;/dt&gt;
+																		&lt;dd&gt;Nuớc trái cây lên men đã tồn tại từ nhiều thế kỹ trước, có thể bắt nguồn từ người Hy Lạp và La Mã cổ đại. Những nền văn minh này là một số nền văn minh đầu tiên tạo ra nuớc trái cây lên men từ nước trái táo. Họ sẽ
+																	ép táo ra và để chúng trong các thùng to. Quá trình này sẽ tạo ra loại thức uống vừa có cồn vừa có ga.&lt;/dd&gt;
+																	&lt;/dl&gt;
+																	&lt;dl&gt;
+																		&lt;dt&gt;SỰ KHÁC BIỆT CỦA NUỚC TRÁI CÂY LÊN MEN KHÔNG NỒNG ĐỘ CỒN&lt;/dt&gt;
+																		&lt;dd&gt;Đây cũng là hướng đi sản phẩm mà FJW đang theo đuổi - là nước trái cây làm từ các loại trái cây địa phương với sư cải tiến trong quá trình lên men được thực hiện theo công nghệ độc quyền của FJW, được nghiên cứu bởi phòng phát triển sản phẩm. Thường ướp lạnh khi uống hoặc uống cùng đá viên hoặc được dùng làm nguyên liệu pha chế nước uống.&lt;/dd&gt;
+																	&lt;/dl&gt;					&lt;dl&gt;
+																		&lt;dt&gt;SỰ KHÁC BIỆT CỦA TRÀ HOA LÊN MEN KHÔNG NỒNG ĐỘ CỒN&lt;/dt&gt;
+																		&lt;dd&gt;Đây cũng là hướng đi sản phẩm mà FJW đang theo đuổi - là dòng nước Kombucha được lên men tỉ mĩ từ các loại hoa tươi (Hòa Lài, Hoa Hồng, Hoa Cúc) được lên men Komucha. Quy trình lên men được tuân thủ nghiêm ngặt và theo công nghệ độc quyền của FJW. Bạn sẽ cảm nhận hoàn toàn khác biệt khi thưởng thức Trà hoa lên men Kombucha của FJW.&lt;/dd&gt;
+																	&lt;/dl&gt;</value>
+  </data>
+  <data name="about_slogan" xml:space="preserve">
+    <value>Và sản phẩm đặc trưng của FJW có gì khác?</value>
+  </data>
+  <data name="about_title" xml:space="preserve">
+    <value>Nguồn gốc nước trái cây lên men</value>
+  </data>
+  <data name="contact_btn" xml:space="preserve">
+    <value>Vui lòng để lại lời nhắn để được tư vấn tốt hơn</value>
+  </data>
+  <data name="contact_des" xml:space="preserve">
+    <value>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Địa chỉ:&lt;/strong&gt;&lt;/em&gt;&lt;br&gt; S5-02.17 The Sun Avenue, 28 Mai Chí Thọ, An Phú, Tp.Thủ Đức, TpHCM&lt;/p&gt;
+																		&lt;p&gt;&lt;em&gt;&lt;strong&gt;Điện thoại:&lt;/strong&gt;&lt;/em&gt;&lt;br&gt; +84 937 352 162&lt;/p&gt;
+																		&lt;p&gt;
+																			&lt;em&gt;&lt;strong&gt;E-mail:&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;contact@fjw.vn
+																		&lt;/p&gt;</value>
+  </data>
+  <data name="contact_subtitle" xml:space="preserve">
+    <value>Mỗi dòng sản phẩm đuợc lên men bằng cả trái tim</value>
+  </data>
+  <data name="contact_title" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="events_btn_all" xml:space="preserve">
+    <value>Xem thêm</value>
+  </data>
+  <data name="events_btn_detail" xml:space="preserve">
+    <value>Chi tiết</value>
+  </data>
+  <data name="events_title" xml:space="preserve">
+    <value>Mục tiêu Phát triển bền vững</value>
+  </data>
+   <data name="events_des" xml:space="preserve">
+    <value>Chúng tôi tạo ra sản phẩm nước lên men không cồn có lợi cho sức khỏe, 100% không chất bảo quản</value>
+  </data>
+  <data name="event_date1" xml:space="preserve">
+    <value>Mar. 21</value>
+  </data>
+  <data name="event_date2" xml:space="preserve">
+    <value>Feb. 12</value>
+  </data>
+  <data name="event_featured_add" xml:space="preserve">
+    <value>Trân trọng và gìn giữ giá trị nông sản Việt</value>
+  </data>
+  <data name="event_featured_datetime" xml:space="preserve">
+    <value>Hướng đến thu nhập ổn định cho nông dân Việt Nam</value>
+  </data>
+  <data name="event_featured_des" xml:space="preserve">
+    <value>Sản phẩm địa phương là ưu tiên hàng đầu trong khâu thu mua Nguyên vật liệu</value>
+  </data>
+  <data name="event_featured_subtitle" xml:space="preserve">
+    <value>VÌ SỰ PHÁT TRIỂN BỀN VỮNG</value>
+  </data>
+  <data name="event_featured_title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="event_time1" xml:space="preserve">
+    <value>10:00 AM</value>
+  </data>
+  <data name="event_time2" xml:space="preserve">
+    <value>12:15 AM</value>
+  </data>
+  <data name="event_title1" xml:space="preserve">
+    <value>Presentation ‘Winemaking Is An Art’</value>
+  </data>
+  <data name="event_title2" xml:space="preserve">
+    <value>Wine &amp; Cheese Lunch</value>
+  </data>
+  <data name="info_des1" xml:space="preserve">
+    <value>Thực hành sản xuất tốt (GMP) là các thực hành bắt buộc để tuân theo các hướng dẫn được khuyến nghị bởi các cơ quan kiểm soát việc cấp phép và cấp phép sản xuất và kinh doanh thực phẩm &amp; đồ uống, mỹ phẩm, dược phẩm, thực phẩm chức năng, và thiết bị y tế.</value>
+  </data>
+  <data name="info_des2" xml:space="preserve">
+    <value>HACCP là từ viết tắt của Hazard Analysis and Critical Control Point trong tiếng Anh và có nghĩa là “hệ thống phân tích mối nguy và kiểm soát điểm tới hạn”, hay “hệ thống phân tích, xác định và tổ chức kiểm soát các mối nguy trọng yếu trong quá trình sản xuất và chế biến thực phẩm”</value>
+  </data>
+  <data name="info_des3" xml:space="preserve">
+    <value>Công bố sản phẩm là việc doanh nghiệp hay tổ chức cá nhân sản xuất khai báo cho cơ quan thẩm quyền biết về chất lượng sản phẩm nhập khẩu hoặc sản xuất trong nước được phép lưu hành trên toàn quốc hay không. Đây là trình tự bắt buộc phải công bố trước khi nhập khẩu hay lưu hành hàng hóa trên cả nước.</value>
+  </data>
+  <data name="info_title1" xml:space="preserve">
+    <value>Chứng nhận GMP</value>
+  </data>
+  <data name="info_title2" xml:space="preserve">
+    <value>Chứng nhận HACCP</value>
+  </data>
+  <data name="info_title3" xml:space="preserve">
+    <value>Công bố sản phẩm</value>
+  </data>
+  <data name="npp_bac" xml:space="preserve">
+    <value>Hà Nội</value>
+  </data>
+  <data name="npp_hcm" xml:space="preserve">
+    <value>Hồ Chí Minh</value>
+  </data>
+  <data name="npp_nam" xml:space="preserve">
+    <value>Miền Nam</value>
+  </data>
+  <data name="npp_trung" xml:space="preserve">
+    <value>Miền Trung</value>
+  </data>
+  <data name="orient_button" xml:space="preserve">
+    <value>Xem thêm</value>
+  </data>
+  <data name="orient_content" xml:space="preserve">
+    <value>Tập thể nhân viên công ty FJW luôn tâm huyết với phương châm tạo ra các sản phẩm lên men (nước ép và trà hoa) tốt cho sức khỏe, không hóa chất, không chất bảo quản. Và nông sản Việt Nam là ưu tiên hàng đầu trong khâu chọn lựa nguyên vật liệu.</value>
+  </data>
+  <data name="orient_slogan" xml:space="preserve">
+    <value>Là công ty dẫn đầu tạo ra sản phẩm nước uống lên men không nồng độ cồn tốt cho sức khoẻ</value>
+  </data>
+  <data name="orient_title" xml:space="preserve">
+    <value>Định hướng phát triển</value>
+  </data>
+  <data name="product_button" xml:space="preserve">
+    <value>Chi tiết sản phẩm</value>
+  </data>
+  <data name="product_content" xml:space="preserve">
+    <value>Tất cả các dòng sản phẩm Trái cây lên men và Trà hoa lên men (Kombucha) mới lạ và đầy thú vị - dành cho những nguời luôn khao khát tìm kiếm sự đổi mới, sáng tạo,giàu Vitamin C và yêu chiều hệ tiêu hoá.
+																Đặc biệt hơn là các dòng sản phẩm của FJW hoàn toàn không chất bảo quản.
+																&lt;dl&gt;
+																	&lt;dt&gt;Hiện tại, FJW đang có 2 dòng nước lên men không độ cồn chính:&lt;/dt&gt;
+																	&lt;dd&gt;
+																			- Nước ép lên men không cồn CÓC XANH: Vị ngọt nhẹ, thanh mát
+																			- Nước ép lên mên không cồn CHANH DÂY: Vị chua, sảng khoái
+																			- Trà hoa lên men Kombucha: Hoa Hồng, Hoa Cúc, Hoa Lài, Hoa Atiso Đỏ
+																		
+																	&lt;/dd&gt;
+																&lt;/dl&gt;</value>
+  </data>
+  <data name="product_slogan" xml:space="preserve">
+    <value>Nước trái cây lên men và Trà hoa lên men Kombucha</value>
+  </data>
+  <data name="product_title" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="slogan" xml:space="preserve">
+    <value>MỖI CHAI NƯỚC ÉP LEN MEN VÀ TRÀ HOA KOMBUCHA LÀ CẢ TÂM HỒN SÁNG TẠO</value>
+  </data>
+</root>

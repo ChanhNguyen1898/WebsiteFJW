@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using WebsiteFJW.Controllers
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<HomeController> Localizer
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -13,7 +17,7 @@
 	<link rel='stylesheet' id='woocommerce-general-css' href='~/js/vendor/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
 	@RenderSection("Styles", required: false)
 	<link rel='stylesheet' id='laon_wine_house-font-google_fonts-css' href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic%7CLato:400,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
-    <link rel='stylesheet' id='laon_wine_house-fontello-css' href='~/css/fontello/css/fontello-embedded.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='laon_wine_house-fontello-css' href='~/css/fontello/css/fontello-embedded.css' type='text/css' media='all' />
     <link rel='stylesheet' id='laon_wine_house-main-css' href='~/css/style.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='laon_wine_house-animation-css' href='~/css/animation.css' type='text/css' media='all' />
     <link rel='stylesheet' id='laon_wine_house-colors-css' href='~/css/__colors.css' type='text/css' media='all' />
@@ -24,80 +28,72 @@
 <body class="page page-template-default body_tag body_style_wide scheme_default blog_mode_page is_single sidebar_hide header_style_header-1 header_position_default header_title_on menu_style_top vc_responsive desktop_layout">
 	<div class="body_wrap">
         <div class="page_wrap">
-			<header class="top_panel top_panel_style_1 without_bg_image scheme_default">
+			<header class="top_panel top_panel_style_1 without_bg_image scheme_default header_layout">
 				<a class="menu_mobile_button"></a>
 				<div class="top_panel_fixed_wrap"></div>
 				<div class="top_panel_navi scheme_default">
+					<div class="icons-multilang">
+						<a href="?culture=vi-VN"><img src="~/images/icons/ic-vn.png" /></a>
+						<a href="?culture=en-US"><img src="~/images/icons/ic-en.png" /></a>
+					</div>
 					<div class="menu_main_wrap clearfix">
 						<div class="wrap">
 							<a class="logo" href="/"><img src="images/logo.png" class="logo_main" alt="" /></a>
 							<nav class="menu_main_nav_area menu_hover_fade">
 								<ul id="menu_main" class="menu_main_nav">
 									<li class="menu-item">
-										<a href="/"><span>Home</span></a>
+										<a href="/"><span>@Localizer["menu1"]</span></a>
 									</li>
 									<li class="menu-item@(ViewBag.PCurrent == "winelist" ? " current-menu-parent" : "")">
-										<a href="WineList"><span>Our range</span></a>
+										<a href="WineList"><span>@Localizer["menu2"]</span></a>
 									</li>
 									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "blogarchive" ? " current-menu-parent" : "")">
-										<a href="BlogArchive"><span>The Journal</span></a>
+										<a href="BlogArchive"><span>@Localizer["menu3"]</span></a>
 										<ul class="sub-menu">
 											<li class="menu-item@(ViewBag.CCurrent == "portfolio" ? " current-menu-item" : "")">
-												<a href="Portfolio"><span>Portfolio</span></a>
-												@*<ul class="sub-menu">
-													<li class="menu-item@(ViewBag.CCurrent == "portfolio2c" ? " current-menu-item" : "")">
-														<a href="Portfolio2c"><span>2 columns</span></a>
-													</li>
-													<li class="menu-item@(ViewBag.CCurrent == "portfolio3c" ? " current-menu-item" : "")">
-														<a href="Portfolio3c"><span>3 columns</span></a>
-													</li>
-													<li class="menu-item@(ViewBag.CCurrent == "portfolio4c" ? " current-menu-item" : "")">
-														<a href="Portfolio4c"><span>4 columns</span></a>
-													</li>
-												</ul>*@
+												<a href="Portfolio"><span>@Localizer["menu3_1"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "category" ? " current-menu-item" : "")">
-												<a href="BlogArchive"><span>Post Formats</span></a>
+												<a href="BlogArchive"><span>@Localizer["menu3_2"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "singlepost" ? " current-menu-item" : "")">
-												<a href="SinglePost"><span>Post with comments</span></a>
+												<a href="SinglePost"><span>@Localizer["menu3_3"]</span></a>
 											</li>
 										</ul>
 									</li>
 									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "buywines" ? " current-menu-parent" : "")">
-										<a href="BuyWines"><span>Buy Wines</span></a>
+										<a href="BuyWines"><span>@Localizer["menu4"]</span></a>
 										<ul class="sub-menu">
 											<li class="menu-item@(ViewBag.CCurrent == "cart" ? " current-menu-item" : "")">
-												<a href="Cart"><span>Cart</span></a>
+												<a href="Cart"><span>@Localizer["menu4_1"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "checkout" ? " current-menu-item" : "")">
-												<a href="Checkout"><span>Checkout</span></a>
+												<a href="Checkout"><span>@Localizer["menu4_2"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "myaccount" ? " current-menu-item" : "")">
-												<a href="MyAccount"><span>My Account</span></a>
+												<a href="MyAccount"><span>@Localizer["menu4_3"]</span></a>
 											</li>
 										</ul>
 									</li>
 									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "features" ? " current-menu-parent" : "")">
-										<a><span>Features</span></a>
+										<a><span>@Localizer["menu5"]</span></a>
 										<ul class="sub-menu">
 											<li class="menu-item@(ViewBag.CCurrent == "typography" ? " current-menu-item" : "")">
-												<a href="Typography"><span>Typography</span></a>
+												<a href="Typography"><span>@Localizer["menu5_1"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "shortcodes" ? " current-menu-item" : "")">
-												<a href="Shortcodes"><span>Shortcodes</span></a>
+												<a href="Shortcodes"><span>@Localizer["menu5_2"]</span></a>
 											</li>
 											<li class="menu-item@(ViewBag.CCurrent == "events" ? " current-menu-item" : "")">
-												<a href="Events"><span>Events</span></a>
+												<a href="Events"><span>@Localizer["menu5_3"]</span></a>
 											</li>
-											@*<li class="menu-item"><a href="non-existing-page.html"><span>Page 404</span></a></li>*@
 										</ul>
 									</li>
 									<li class="menu-item menu-item-has-children@(ViewBag.PCurrent == "contacts" ? " current-menu-parent" : "")">
-										<a href="Contacts"><span>Contacts</span></a>
+										<a href="Contacts"><span>@Localizer["menu6"]</span></a>
 										<ul class="sub-menu">
-											<li class="menu-item@(ViewBag.CCurrent == "contacts" ? " current-menu-item" : "")"><a href="Contacts"><span>Contact Us</span></a></li>
-											<li class="menu-item@(ViewBag.CCurrent == "aboutus" ? " current-menu-item" : "")"><a href="AboutUs"><span>About Us</span></a></li>
+											<li class="menu-item@(ViewBag.CCurrent == "contacts" ? " current-menu-item" : "")"><a href="Contacts"><span>@Localizer["menu6_1"]</span></a></li>
+											<li class="menu-item@(ViewBag.CCurrent == "aboutus" ? " current-menu-item" : "")"><a href="AboutUs"><span>@Localizer["menu6_2"]</span></a></li>
 										</ul>
 									</li>
 								</ul>
@@ -118,15 +114,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="top_panel_title_wrap">
-					<div class="content_wrap">
-						<div class="top_panel_title">
-							<div class="page_title">
-								<h1 class="page_caption">@ViewData["Title"]</h1>
-							</div>
-						</div>
-					</div>
-				</div>
 			</header>
 			<partial name="~/Views/Shared/_MenuMobile.cshtml" />
             <div class="page_content_wrap scheme_default">
@@ -135,8 +122,8 @@
 			<partial name="~/Views/Shared/_Footer.cshtml" />
         </div>
     </div>
-    
-    <script type='text/javascript' src='~/js/vendor/jquery.js'></script>
+
+	<script type='text/javascript' src='~/js/vendor/jquery.js'></script>
     <script type='text/javascript' src='~/js/vendor/jquery-migrate.min.js'></script>
 	<script type='text/javascript' src='~/js/custom/custom.js '></script>
 	@RenderSection("Scripts", required: false)

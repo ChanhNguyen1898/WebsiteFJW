@@ -1,52 +1,53 @@
-﻿<div class="menu_mobile_overlay"></div>
+﻿@using WebsiteFJW.Controllers
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<HomeController> Localizer
+
+<div class="menu_mobile_overlay"></div>
 <div class="menu_mobile scheme_dark">
 	<div class="menu_mobile_inner">
+		<div class="icons-multilang">
+			<a href="?culture=vi-VN"><img src="~/images/icons/ic-vn.png" /></a>
+			<a href="?culture=en-US"><img src="~/images/icons/ic-en.png" /></a>
+		</div>
 		<a class="menu_mobile_close icon-cancel"></a>
 		<nav class="menu_mobile_nav_area">
 			<ul id="menu_mobile" class="menu_mobile_nav">
 				<li class="menu-item">
-					<a href="/"><span>Home</span></a>
+					<a href="/"><span>@Localizer["menu1"]</span></a>
 				</li>
 				<li class="menu-item">
-					<a href="WineList"><span>Our range</span></a>
+					<a href="WineList"><span>@Localizer["menu2"]</span></a>
 				</li>
 				<li class="menu-item menu-item-has-children">
-					<a href="BlogArchive"><span>The Journal</span></a>
+					<a href="BlogArchive"><span>@Localizer["menu3"]</span></a>
 					<ul class="sub-menu">
-						<li class="menu-item">
-							<a href="Portfolio"><span>Portfolio</span></a>
-							@*<ul class="sub-menu">
-								<li class="menu-item"><a href="portfolio2c"><span>2 columns</span></a></li>
-								<li class="menu-item"><a href="portfolio3c"><span>3 columns</span></a></li>
-								<li class="menu-item"><a href="portfolio4c"><span>4 columns</span></a></li>
-							</ul>*@
-						</li>
-						<li class="menu-item"><a href="BlogArchive"><span>Post Formats</span></a></li>
-						<li class="menu-item"><a href="SinglePost"><span>Post with comments</span></a></li>
+						<li class="menu-item"><a href="Portfolio"><span>@Localizer["menu3_1"]</span></a></li>
+						<li class="menu-item"><a href="BlogArchive"><span>@Localizer["menu3_2"]</span></a></li>
+						<li class="menu-item"><a href="SinglePost"><span>@Localizer["menu3_3"]</span></a></li>
 					</ul>
 				</li>
 				<li class="menu-item menu-item-has-children">
-					<a href="BuyWines"><span>Buy Wines</span></a>
+					<a href="BuyWines"><span>@Localizer["menu4"]</span></a>
 					<ul class="sub-menu">
-						<li class="menu-item"><a href="Cart"><span>Cart</span></a></li>
-						<li class="menu-item"><a href="Checkout"><span>Checkout</span></a></li>
-						<li class="menu-item"><a href="MyAccount"><span>My Account</span></a></li>
+						<li class="menu-item"><a href="Cart"><span>@Localizer["menu4_1"]</span></a></li>
+						<li class="menu-item"><a href="Checkout"><span>@Localizer["menu4_2"]</span></a></li>
+						<li class="menu-item"><a href="MyAccount"><span>@Localizer["menu4_3"]</span></a></li>
 					</ul>
 				</li>
 				<li class="menu-item menu-item-has-children">
-					<a href="#"><span>Features</span></a>
+					<a href="#"><span>@Localizer["menu5"]</span></a>
 					<ul class="sub-menu">
-						<li class="menu-item"><a href="Typography"><span>Typography</span></a></li>
-						<li class="menu-item"><a href="Shortcodes"><span>Shortcodes</span></a></li>
-						<li class="menu-item"><a href="Events"><span>Events</span></a></li>
-						@*<li class="menu-item"><a href="non-existing-page.html"><span>Page 404</span></a></li>*@
+						<li class="menu-item"><a href="Typography"><span>@Localizer["menu5_1"]</span></a></li>
+						<li class="menu-item"><a href="Shortcodes"><span>@Localizer["menu5_2"]</span></a></li>
+						<li class="menu-item"><a href="Events"><span>@Localizer["menu5_3"]</span></a></li>
 					</ul>
 				</li>
 				<li class="menu-item menu-item-has-children">
-					<a href="Contacts"><span>Contacts</span></a>
+					<a href="Contacts"><span>@Localizer["menu6"]</span></a>
 					<ul class="sub-menu">
-						<li class="menu-item"><a href="Contacts"><span>Contact Us</span></a></li>
-						<li class="menu-item"><a href="AboutUs"><span>About Us</span></a></li>
+						<li class="menu-item"><a href="Contacts"><span>@Localizer["menu6_1"]</span></a></li>
+						<li class="menu-item"><a href="AboutUs"><span>@Localizer["menu6_2"]</span></a></li>
 					</ul>
 				</li>
 			</ul>
@@ -54,7 +55,7 @@
 		<div class="search_mobile">
 			<div class="search_form_wrap">
 				<form role="search" method="get" class="search_form" action="#">
-					<input type="text" class="search_field" placeholder="Search ..." value="" name="s">
+					<input type="text" class="search_field" placeholder="@Localizer["search"] ..." value="" name="s">
 					<button type="submit" class="search_submit icon-search" title="Start search"></button>
 				</form>
 			</div>
