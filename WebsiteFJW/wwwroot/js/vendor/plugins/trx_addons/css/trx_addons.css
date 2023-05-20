@@ -4916,7 +4916,8 @@ blockquote.sc_promo_text {
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    width: 86%;
 }
 
 .sc_promo_text.sc_float_left, .sc_promo_text.sc_float_right, .sc_promo_text.sc_float_center {
