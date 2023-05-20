@@ -1,5 +1,11 @@
-﻿@{
-	ViewData["Title"] = "All Posts";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@using WebsiteFJW.Controllers
+
+@inject IStringLocalizer<HomeController> Localizer
+@inject IViewLocalizer ViewLocalizer
+@{
+	ViewData["Title"] = ViewLocalizer["title"];
 	ViewBag.PCurrent = "blogarchive";
 	ViewBag.CCurrent = "category";
 }
@@ -16,10 +22,19 @@
 	<script type='text/javascript' src='js/vendor/mediaelement/mediaelement-and-player.min.js'></script>
 	<script type='text/javascript' src='js/vendor/mediaelement/wp-mediaelement.min.js'></script>
 }
-<div class="breadcrumbs">
-	<a class="breadcrumbs_item home" href="/">Home</a>
-	<span class="breadcrumbs_delimiter"></span>
-	<span class="breadcrumbs_item current">@ViewData["Title"]</span>
+<div class="top_panel_title_wrap">
+	<div class="content_wrap">
+		<div class="top_panel_title">
+			<div class="page_title">
+				<h1 class="page_caption">@ViewLocalizer["title"]</h1>
+			</div>
+			<div class="breadcrumbs">
+				<a class="breadcrumbs_item home" href="/">@Localizer["menu1"]</a>
+				<span class="breadcrumbs_delimiter"></span>
+				<span class="breadcrumbs_item current">@ViewLocalizer["title"]</span>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="body blog body_tag body_style_wide scheme_default blog_mode_blog is_stream blog_style_excerpt sidebar_show sidebar_right header_style_header-1 header_position_default header_title_on menu_style_top no_layout vc_responsive">
 	<div class="wrap">

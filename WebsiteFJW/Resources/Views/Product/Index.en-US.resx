@@ -117,58 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="menu1" xml:space="preserve">
-    <value>Trang Chủ</value>
+  <data name="name-product-1" xml:space="preserve">
+    <value>Cabernet Sauvignon</value>
   </data>
-  <data name="menu2" xml:space="preserve">
-    <value>Sản phẩm</value>
-  </data>
-  <data name="menu3" xml:space="preserve">
-    <value>Về chúng tôi</value>
-  </data>
-  <data name="menu3_1" xml:space="preserve">
-    <value>Định hướng phát triển</value>
-  </data>
-  <data name="menu3_2" xml:space="preserve">
-    <value>Mục tiêu phát triển</value>
-  </data>
-  <data name="menu3_3" xml:space="preserve">
-    <value>Chia sẻ từ đối tác</value>
-  </data>
-  <data name="menu4" xml:space="preserve">
-    <value>Đặt hàng</value>
-  </data>
-  <data name="menu4_1" xml:space="preserve">
-    <value>Giỏ hàng</value>
-  </data>
-  <data name="menu4_2" xml:space="preserve">
-    <value>Mua hàng</value>
-  </data>
-  <data name="menu4_3" xml:space="preserve">
-    <value>Tài khoản của tôi</value>
-  </data>
-  <data name="menu5" xml:space="preserve">
-    <value>Bảng giá sản phẩm</value>
-  </data>
-  <data name="menu5_1" xml:space="preserve">
-    <value>Đại lý phân phối</value>
-  </data>
-  <data name="menu5_2" xml:space="preserve">
-    <value>Đối tác kinh doanh</value>
-  </data>
-  <data name="menu5_3" xml:space="preserve">
-    <value>Cửa hàng nhượng quyền</value>
-  </data>
-  <data name="menu6" xml:space="preserve">
-    <value>Liên hệ</value>
-  </data>
-  <data name="menu6_1" xml:space="preserve">
-    <value>Liên hệ chúng tôi</value>
-  </data>
-  <data name="menu6_2" xml:space="preserve">
-    <value>Lời nhắn từ FJW</value>
-  </data>
-  <data name="search" xml:space="preserve">
-    <value>Tìm kiếm</value>
+  <data name="title" xml:space="preserve">
+    <value>Product</value>
   </data>
 </root>

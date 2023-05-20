@@ -1,5 +1,11 @@
-﻿@{
-	ViewData["Title"] = "Buy Wines";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@using WebsiteFJW.Controllers
+
+@inject IStringLocalizer<HomeController> Localizer
+@inject IViewLocalizer ViewLocalizer
+@{
+	ViewData["Title"] = ViewLocalizer["title"];
 	ViewBag.PCurrent = "buywines";
 }
 @section Styles {
@@ -28,10 +34,19 @@
 	<script type='text/javascript' src='js/custom/rev_slider_1_1.js'></script>
 }
 
-<div class="breadcrumbs">
-	<a class="breadcrumbs_item home" href="/">Home</a>
-	<span class="breadcrumbs_delimiter"></span>
-	<span class="breadcrumbs_item current">@ViewData["Title"]</span>
+<div class="top_panel_title_wrap">
+	<div class="content_wrap">
+		<div class="top_panel_title">
+			<div class="page_title">
+				<h1 class="page_caption">@ViewLocalizer["title"]</h1>
+			</div>
+			<div class="breadcrumbs">
+				<a class="breadcrumbs_item home" href="/">@Localizer["menu1"]</a>
+				<span class="breadcrumbs_delimiter"></span>
+				<span class="breadcrumbs_item current">@ViewLocalizer["title"]</span>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="body expand_content remove_margins">
 	<div class="content_wrap">
